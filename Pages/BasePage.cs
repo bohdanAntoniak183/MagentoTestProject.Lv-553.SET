@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeleniumPageObject.Pages
+namespace MagentoLv553SET.Pages
 {
     public abstract class BasePage
     {

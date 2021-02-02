@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SeleniumPageObject.Pages;
-using SeleniumPageObject.Data;
+using MagentoLv553SET.Pages;
+using MagentoLv553SET.Data;
 using NUnit.Framework;
 using OpenQA.Selenium;
 
-namespace SeleniumPageObject.Steps
+namespace MagentoLv553SET.Steps
 {
     class AuthorizationPageBL : HomePageBL
     {

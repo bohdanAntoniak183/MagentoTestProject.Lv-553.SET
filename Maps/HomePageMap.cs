@@ -1,9 +1,6 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace SeleniumPageObject.Maps
+namespace MagentoLv553SET.Maps
 {
     class HomePageMap
     {
