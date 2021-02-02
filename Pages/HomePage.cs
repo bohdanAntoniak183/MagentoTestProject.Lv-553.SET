@@ -4,11 +4,11 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using System;
-using SeleniumPageObject.Components;
-using SeleniumPageObject.Pages;
-using SeleniumPageObject.Maps;
+using MagentoLv553SET.Components;
+using MagentoLv553SET.Pages;
+using MagentoLv553SET.Maps;
 
-namespace SeleniumPageObject.Pages
+namespace MagentoLv553SET.Pages
 {
     class HomePage : AMenuPart
     {
@@ -16,6 +16,7 @@ namespace SeleniumPageObject.Pages
         {
 
         }
+
         public IWebElement MainSignInButton
         {
             get

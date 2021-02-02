@@ -4,9 +4,9 @@ using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using SeleniumPageObject.Data;
+using MagentoLv553SET.Data;
 
-namespace SeleniumPageObject.Tests
+namespace MagentoLv553SET.Tests
 {
     public class BaseTest
     {
