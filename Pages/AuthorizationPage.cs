@@ -2,10 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using SeleniumPageObject.Maps;
-using SeleniumPageObject.Components;
+using MagentoLv553SET.Maps;
+using MagentoLv553SET.Components;
 
-namespace SeleniumPageObject.Pages
+namespace MagentoLv553SET.Pages
 {
     class AuthorizationPage : AMenuPart
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace SeleniumPageObject.Maps
+namespace MagentoLv553SET.Maps
 {
     class AuthorizationPageMap
     {

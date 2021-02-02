@@ -2,10 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using SeleniumPageObject.Pages;
-using SeleniumPageObject.Steps;
+using MagentoLv553SET.Pages;
+using MagentoLv553SET.Steps;
 
-namespace SeleniumPageObject.Tests
+namespace MagentoLv553SET.Tests
 {
     [TestFixture]
     class AuthorizationTests : BaseTest
