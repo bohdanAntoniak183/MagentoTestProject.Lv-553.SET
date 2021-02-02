@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeleniumPageObject.Pages
+namespace MagentoLv553SET.Maps
 {
     class EditAccountInformationPageMap
 {

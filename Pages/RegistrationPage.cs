@@ -1,10 +1,11 @@
-﻿using OpenQA.Selenium;
-using SeleniumPageObject.Components;
+﻿using MagentoLv553SET.Components;
+using MagentoLv553SET.Maps;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeleniumPageObject.Pages
+namespace MagentoLv553SET.Pages
 {
     class RegistrationPage : AMenuPart
     {
