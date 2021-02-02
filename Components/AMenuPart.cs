@@ -15,32 +15,45 @@ namespace MagentoLv553SET.Components
         }
 
         public IWebElement WelcomeLabel
-        { get { return driver.FindElement(By.CssSelector("div.panel.header li.greet.welcome span")); } }
-        public IWebElement SignInButton
-        { get { return driver.FindElement(By.CssSelector("div.panel.header li.authorization-link a")); } }
-        public IWebElement CreateAccountButton
-        { get { return driver.FindElement(By.XPath("//div[@class = 'panel header']//a[contains(@href, 'account/create')]")); } }
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.welcomeLableMap));
+                return driver.FindElement(MenuPartMap.welcomeLableMap);
+            }
+        }
         public IWebElement Logo
-        { get { return driver.FindElement(By.CssSelector("a.logo")); } }
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.logoMap));
+                return driver.FindElement(MenuPartMap.logoMap);
+            }
+        }
         public IWebElement SearchInput
-        { get { return driver.FindElement(By.CssSelector("input#search")); } }
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.searchInputMap));
+                return driver.FindElement(MenuPartMap.searchInputMap);
+            }
+        }
         public IWebElement ShoppingCartButton
-        { get { return driver.FindElement(By.PartialLinkText("checkout/cart")); } }
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.shoppingCartButtonMap));
+                return driver.FindElement(MenuPartMap.shoppingCartButtonMap);
+            }
+        }
 
         public string GetWelcomeLabelText()
         {
             return WelcomeLabel.Text;
-        }
-
-        public AuthorizationPage ClickOnSignInButton()
-        {
-            SignInButton.Click();
-            return new AuthorizationPage(driver);
-        }
-
-        public void ClickOnCreateAccountButton()
-        {
-            CreateAccountButton.Click();
         }
 
         public void ClickOnLogo()
