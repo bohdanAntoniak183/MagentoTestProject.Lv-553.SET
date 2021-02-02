@@ -22,5 +22,15 @@ namespace MagentoLv553SET.Pages
                 return driver.FindElement(SuccessfulLoginPageMap.welcomeMessage);
             }
         }
+        public IWebElement MainPageProductContainer
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementIsVisible(SuccessfulLoginPageMap.mainPageProductContainer));
+                return driver.FindElement(SuccessfulLoginPageMap.mainPageProductContainer);
+            }
+        }
+
     }
 }

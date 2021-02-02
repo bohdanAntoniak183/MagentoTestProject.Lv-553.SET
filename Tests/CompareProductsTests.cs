@@ -2,32 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MagentoLv553SET.Pages;
 using MagentoLv553SET.Steps;
 
 namespace MagentoLv553SET.Tests
 {
     [TestFixture]
-    class AuthorizationTests : BaseTest
+    class CompareProductsTests : BaseTest
     {
-        [Test]
-        public void AuthorizationTest()
-        {
-            var homePage = new HomePageBL(webDriver);
-            homePage
-                .ClickOnMainSignInButton()
-                .LogIntoAccount();
-
-            var expectedResult = "Welcome";
-            var actualResult = new SuccessfulLoginPageBL(webDriver).GetWelcomeMessage();
-
-            Assert.IsTrue(actualResult.Contains(expectedResult));
-        }
-
         [Test]
         public void AddToCompareListTest()
         {
-            AuthorizationTest();
+            AuthorizationTests authorizationTests = new AuthorizationTests();
+            authorizationTests.AuthorizationTest();
 
             var homePage = new SuccessfulLoginPageBL(webDriver);
             homePage

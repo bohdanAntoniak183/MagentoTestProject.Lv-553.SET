@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
+using OpenQA.Selenium.Interactions;
 
 namespace MagentoLv553SET.Steps
 {
@@ -19,6 +20,14 @@ namespace MagentoLv553SET.Steps
         {
             string welcomeMessage = successfulLoginPage.WelcomeMessage.Text;
             return welcomeMessage;
+        }
+
+        public ProductPageBL ClickOnProductContainer()
+        {
+            Actions action = new Actions(webDriver);
+            action.MoveToElement(successfulLoginPage.MainPageProductContainer).Build().Perform();
+            successfulLoginPage.MainPageProductContainer.Click();
+            return new ProductPageBL(webDriver);
         }
     }
 }
