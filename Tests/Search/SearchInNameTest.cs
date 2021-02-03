@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
-using SeleniumPageObject.Tests;
-using SeleniumPageObject.Steps;
+using MagentoLv553SET.Steps;
+using MagentoLv553SET.Pages;
 
 namespace MagentoLv553SET.Tests.Search
 {
@@ -10,14 +10,15 @@ namespace MagentoLv553SET.Tests.Search
     {
 
         [Test]
-        public void AuthorizationTest()
+        public void SearchTest()
         {
             var homePage = new HomePageBL(webDriver);
             homePage
-                .ClickOnMainSignInButton();
+                .GetSearchComponentBL()
+                .SearchText("Tank");
+            new SearchPageBL(webDriver)
+                .GetListOfProductNames();
 
-
-            Assert.IsTrue();
         }
     }
 }

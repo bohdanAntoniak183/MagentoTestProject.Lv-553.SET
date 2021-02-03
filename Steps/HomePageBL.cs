@@ -17,6 +17,11 @@ namespace MagentoLv553SET.Steps
             homePage = new HomePage(webDriver);
         }
 
+        public SearchComponentBL GetSearchComponentBL ()
+        {
+            return new SearchComponentBL (webDriver);
+        }
+
         public AuthorizationPageBL ClickOnMainSignInButton()
         {
             homePage.MainSignInButton.Click();

@@ -4,10 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
-
-    <AssemblyName>MagentoLv553SET</AssemblyName>
-
-    <RootNamespace>MagentoLv553SET</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Util\" />
-    <Folder Include="Tests\Search\" />
+    <Folder Include="Containers\" />
   </ItemGroup>
 
 </Project>

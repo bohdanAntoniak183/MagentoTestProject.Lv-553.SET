@@ -4,11 +4,15 @@ using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Steps;
 
 namespace MagentoLv553SET.Components
 {
-    abstract class AMenuPart : BasePage
+    public abstract class AMenuPart : BasePage
     {
+        //protected IWebDriver driver;
+        protected IWebDriver webDriver;
+
         public AMenuPart(IWebDriver webDriver) : base(webDriver)
         {
 
@@ -41,6 +45,18 @@ namespace MagentoLv553SET.Components
                 return driver.FindElement(MenuPartMap.searchInputMap);
             }
         }
+
+        public IWebElement SearchButton
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.searchButtonMap));
+                return driver.FindElement(MenuPartMap.searchButtonMap);
+            }
+        }
+
+        
         public IWebElement ShoppingCartButton
         {
             get
@@ -61,6 +77,12 @@ namespace MagentoLv553SET.Components
             Logo.Click();
         }
 
+        public void ClickOnShoppingCartButton()
+        {
+            ShoppingCartButton.Click();
+        }
+
+
         public void ClearSearchInput()
         {
             SearchInput.Clear();
@@ -76,9 +98,9 @@ namespace MagentoLv553SET.Components
             SearchInput.SendKeys(data);
         }
 
-        public void ClickOnShoppingCartButton()
+        public void ClickOnSearchButton()
         {
-            ShoppingCartButton.Click();
+            SearchButton.Click();
         }
     }
 }
