@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
-using SeleniumPageObject.Pages;
+using MagentoLv553SET.Pages;
 
-namespace SeleniumPageObject.Steps
+namespace MagentoLv553SET.Steps
 {
     class SuccessfulLoginPageBL : HomePageBL
     {

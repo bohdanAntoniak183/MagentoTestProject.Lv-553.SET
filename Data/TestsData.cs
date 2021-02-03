@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SeleniumPageObject.Data
+namespace MagentoLv553SET.Data
 {
     class TestsData
     {
