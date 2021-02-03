@@ -15,7 +15,7 @@ namespace MagentoLv553SET.Pages
         public BasePage(IWebDriver webDriver)
         {
             driver = webDriver;
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
         }
     }
 }

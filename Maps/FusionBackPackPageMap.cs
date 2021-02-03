@@ -5,11 +5,8 @@ using System.Text;
 
 namespace MagentoLv553SET.Maps
 {
-    class SuccessfulLoginPageMap
+    class FusionBackPackPageMap
     {
-        public static readonly By welcomeMessage = By.XPath("//span[contains(text(),'Welcome')]");
-
         
-    
     }
 }

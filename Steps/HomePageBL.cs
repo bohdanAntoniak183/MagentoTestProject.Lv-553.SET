@@ -19,8 +19,10 @@ namespace MagentoLv553SET.Steps
 
         public AuthorizationPageBL ClickOnMainSignInButton()
         {
-            homePage.MainSignInButton.Click();
+            homePage.ClickOnMainSignInButton();
             return new AuthorizationPageBL(webDriver);
         }
+
+ 
     }
 }

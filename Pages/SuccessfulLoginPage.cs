@@ -7,7 +7,7 @@ using MagentoLv553SET.Components;
 
 namespace MagentoLv553SET.Pages
 {
-    class SuccessfulLoginPage : BasePage
+    class SuccessfulLoginPage : HomePage
     {
         public SuccessfulLoginPage(IWebDriver webDriver) : base(webDriver)
         {
@@ -22,5 +22,22 @@ namespace MagentoLv553SET.Pages
                 return driver.FindElement(SuccessfulLoginPageMap.welcomeMessage);
             }
         }
+
+        public string GetWelcomeMessage()
+        {
+            return WelcomeMessage.Text;
+        }
+
+
+        //public IWebElement WelcomeMessage
+        //{
+        //    get
+        //    {
+        //        wait.Until(SeleniumExtras.WaitHelpers.
+        //            ExpectedConditions.ElementIsVisible(SuccessfulLoginPageMap.welcomeMessage));
+        //        return driver.FindElement(SuccessfulLoginPageMap.welcomeMessage);
+        //    }
+        //}
+
     }
 }

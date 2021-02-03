@@ -34,6 +34,7 @@ namespace MagentoLv553SET.Tests
         protected void DoAfterEachTest()
         {
             webDriver.Quit();
+
         }
     }
 }
