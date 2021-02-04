@@ -5,7 +5,7 @@ using MagentoLv553SET.Maps;
 
 namespace MagentoLv553SET.Components.ShoppingCartComponents
 {
-    class ShoppingCartDropDownProductContainer
+    public class ShoppingCartDropDownProductContainer
     {
         private IWebDriver driver;
 
