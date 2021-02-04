@@ -33,5 +33,7 @@ namespace MagentoLv553SET.Maps
 
         public static readonly By messageAboutAddingAllProductsInShoppingCart = By.XPath("//*[contains(text(),'product(s) have been added to shopping cart:')]");
 
+        public static readonly By messageAboutSharingWishList = By.XPath("//*[contains(text(),'Your wish list has been shared.')]");
+
     }
 }

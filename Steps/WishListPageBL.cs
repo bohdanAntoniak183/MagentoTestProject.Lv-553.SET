@@ -93,6 +93,19 @@ namespace MagentoLv553SET.Steps
             return allProductsAddedToShoppingCartMessage;
         }
 
+        public WishListSharingPageBL GoToWishListSharingPage()
+        {
+            wishListPage.ClickOnShareWishListButton();
+            return new WishListSharingPageBL(webDriver);
+        }
+
+        public string GetSuccessSharingMessage()
+        {
+            string seccessSharingMessage = wishListPage.GetMessageAboutSharingWishList();
+            return seccessSharingMessage;
+        }
+
+
 
     }
 }

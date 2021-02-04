@@ -110,5 +110,45 @@ namespace MagentoLv553SET.Tests
 
             Assert.IsTrue(actualResult.Contains(expectedResult));
         }
+
+        [Test]
+        public void ShareWishListTest()
+        {
+            var homePage = new HomePageBL(webDriver);
+            homePage
+                .ClickOnMainSignInButton()
+                .LogIntoAccount()
+                .ClickOnAddToWishListButtonforFusionBackpackProduct()
+                .GoToWishListSharingPage()
+                .InputEmailToEmailsField()
+                .InputMassageToMessageField()
+                .ShareWishList();
+
+
+            var expectedResult = "Your wish list has been shared.";
+            var actualResult = new WishListPageBL(webDriver).GetSuccessSharingMessage();
+
+            Assert.IsTrue(actualResult.Contains(expectedResult));
+        }
+
+        [Test]
+        public void ShareWishListWithIncorrectEmailTest()
+        {
+            var homePage = new HomePageBL(webDriver);
+            homePage
+                .ClickOnMainSignInButton()
+                .LogIntoAccount()
+                .ClickOnAddToWishListButtonforFusionBackpackProduct()
+                .GoToWishListSharingPage()
+                .InputIncorrectEmailToEmailsField()
+                .InputMassageToMessageField()
+                .ShareWishListWithIncorrectEmail();
+
+
+            var expectedResult = "Please enter valid email addresses, separated by commas.";
+            var actualResult = new WishListSharingPageBL(webDriver).GetFailSharingMessage();
+
+            Assert.IsTrue(actualResult.Contains(expectedResult));
+        }
     }
 }

@@ -8,5 +8,8 @@ namespace MagentoLv553SET.Data
     {
         public static string logInPassword = "roni_cost3@example.com";
         public static string logInEmail = "roni_cost@example.com";
+        public static string sharingMessage = "my wish list!";
+        public static string incorrectEmailForWishListSharingPage = "wishListTest@@setlv.com";
+
     }
 }

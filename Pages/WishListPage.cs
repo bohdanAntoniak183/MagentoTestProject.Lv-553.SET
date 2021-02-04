@@ -144,6 +144,16 @@ namespace MagentoLv553SET.Pages
             }
         }
 
+        public IWebElement MessageAboutSharingWishList
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(WishListPageMap.messageAboutSharingWishList));
+                return driver.FindElement(WishListPageMap.messageAboutSharingWishList);
+            }
+        }
+
         public string GetProductAddedMessage()
         {
             return ProductAddedMessage.Text;
@@ -213,6 +223,12 @@ namespace MagentoLv553SET.Pages
         {
             return MessageAboutAddingAllProductsInShoppingCart.Text;
         }
+
+        public string GetMessageAboutSharingWishList()
+        {
+            return MessageAboutSharingWishList.Text;
+        }
+
 
 
 
