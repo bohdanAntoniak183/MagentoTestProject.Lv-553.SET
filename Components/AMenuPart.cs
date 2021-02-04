@@ -4,25 +4,22 @@ using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Components.ShoppingCartComponents;
 
 namespace MagentoLv553SET.Components
 {
     abstract class AMenuPart : BasePage
     {
-        public AMenuPart(IWebDriver webDriver) : base(webDriver)
-        {
-
-        }
-
         public IWebElement WelcomeLabel
         {
             get
             {
                 wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.welcomeLableMap));
+                    ExpectedConditions.ElementIsVisible(MenuPartMap.welcomeLableMap));
                 return driver.FindElement(MenuPartMap.welcomeLableMap);
             }
         }
+
         public IWebElement Logo
         {
             get
@@ -49,6 +46,19 @@ namespace MagentoLv553SET.Components
                     ExpectedConditions.ElementToBeClickable(MenuPartMap.shoppingCartButtonMap));
                 return driver.FindElement(MenuPartMap.shoppingCartButtonMap);
             }
+        }
+        public ShoppingCartDropDownComponent ShoppingCartDropDown
+        {
+            get
+            {
+                ClickOnShoppingCartButton();
+                return new ShoppingCartDropDownComponent(driver);
+            }
+        }
+
+        public AMenuPart(IWebDriver webDriver) : base(webDriver)
+        {
+
         }
 
         public string GetWelcomeLabelText()
