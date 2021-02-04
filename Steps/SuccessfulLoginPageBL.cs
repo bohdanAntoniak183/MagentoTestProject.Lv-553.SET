@@ -10,10 +10,12 @@ namespace MagentoLv553SET.Steps
     class SuccessfulLoginPageBL : HomePageBL
     {
         private readonly SuccessfulLoginPage successfulLoginPage;
+       
 
         public SuccessfulLoginPageBL(IWebDriver webDriver) : base(webDriver)
         {
             successfulLoginPage = new SuccessfulLoginPage(webDriver);
+           
         }
 
         public string GetWelcomeMessage()
