@@ -1,5 +1,6 @@
 ﻿using MagentoLv553SET.Components;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -11,56 +12,22 @@ namespace MagentoLv553SET.Pages
     {
         public EditAccountInformationPage(IWebDriver webDriver) : base(webDriver)
         {
-
-        }      
-
-        public IWebElement EditAccountInformationTitle
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(EditAccountInformationPageMap.editAccountInformationTitle));
-                return driver.FindElement(EditAccountInformationPageMap.editAccountInformationTitle);
-            }
-        }
-        public IWebElement CurrentPasswordField
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(EditAccountInformationPageMap.currentPasswordField));
-                return driver.FindElement(EditAccountInformationPageMap.currentPasswordField);
-            }
         }
 
-        public IWebElement NewPasswordField
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(EditAccountInformationPageMap.newPasswordField));
-                return driver.FindElement(EditAccountInformationPageMap.newPasswordField);
-            }
-        }
-        public IWebElement ConfirmNewPasswordField
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(EditAccountInformationPageMap.confirmNewPasswordField));
-                return driver.FindElement(EditAccountInformationPageMap.confirmNewPasswordField);
-            }
-        }
-        
-        public IWebElement SaveNewAccountSettingsButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(EditAccountInformationPageMap.saveNewAccountSettingsButton));
-                return driver.FindElement(EditAccountInformationPageMap.saveNewAccountSettingsButton);
-            }
-        }
+        public IWebElement EditAccountInformationTitle => PropertyGetters.
+            GetVisibleWebElement(EditAccountInformationPageMap.editAccountInformationTitle, driver);
+
+        public IWebElement CurrentPasswordField => PropertyGetters.
+            GetVisibleWebElement(EditAccountInformationPageMap.currentPasswordField, driver);
+
+        public IWebElement NewPasswordField => PropertyGetters.
+            GetVisibleWebElement(EditAccountInformationPageMap.newPasswordField, driver);
+
+        public IWebElement ConfirmNewPasswordField => PropertyGetters.
+            GetVisibleWebElement(EditAccountInformationPageMap.confirmNewPasswordField, driver);
+
+        public IWebElement SaveNewAccountSettingsButton => PropertyGetters.
+            GetClickableWebElement(EditAccountInformationPageMap.saveNewAccountSettingsButton, driver);        
 
     }
 }

@@ -5,10 +5,13 @@ using System.Text;
 
 namespace MagentoLv553SET.Maps
 {
-    class SuccessfulRegistrationPageMap
+    public sealed class SuccessfulRegistrationPageMap
     {
         public static readonly By myAccountTitle = By.XPath("//span[@class = 'base']");
         public static readonly By changePasswordLink = By.XPath("//a[@class='action change-password']");
-        
+
+        private SuccessfulRegistrationPageMap()
+        {
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Components
 {
@@ -14,42 +15,15 @@ namespace MagentoLv553SET.Components
 
         }
 
-        public IWebElement WelcomeLabel
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.welcomeLableMap));
-                return driver.FindElement(MenuPartMap.welcomeLableMap);
-            }
-        }
-        public IWebElement Logo
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.logoMap));
-                return driver.FindElement(MenuPartMap.logoMap);
-            }
-        }
-        public IWebElement SearchInput
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.searchInputMap));
-                return driver.FindElement(MenuPartMap.searchInputMap);
-            }
-        }
-        public IWebElement ShoppingCartButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.shoppingCartButtonMap));
-                return driver.FindElement(MenuPartMap.shoppingCartButtonMap);
-            }
-        }
+        public IWebElement WelcomeLabel => PropertyGetters.
+            GetClickableWebElement(MenuPartMap.welcomeLableMap, driver);
+
+        public IWebElement Logo => PropertyGetters.GetClickableWebElement(MenuPartMap.logoMap,driver);
+
+        public IWebElement SearchInput => PropertyGetters.GetClickableWebElement(MenuPartMap.searchInputMap,driver);
+        
+        public IWebElement ShoppingCartButton => PropertyGetters.GetClickableWebElement(MenuPartMap.shoppingCartButtonMap,driver);
+        
 
         public string GetWelcomeLabelText()
         {

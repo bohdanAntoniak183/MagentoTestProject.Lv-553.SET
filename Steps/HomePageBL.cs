@@ -22,5 +22,10 @@ namespace MagentoLv553SET.Steps
             homePage.MainSignInButton.Click();
             return new AuthorizationPageBL(webDriver);
         }
+        public RegistrationPageBL ClickOnCreateAnAccountButton()
+        {
+            homePage.CreateAnAccountButton.Click();
+            return new RegistrationPageBL(webDriver);
+        }
     }
 }

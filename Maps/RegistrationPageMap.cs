@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MagentoLv553SET.Maps
 {
-    class RegistrationPageMap
+    public sealed class RegistrationPageMap
     {
         public static readonly By createNewCustomerAccountTitle = By.XPath("//span[@class = 'base']");
         public static readonly By personalInformationTitle = By.XPath("//span[text()='Personal Information']");
@@ -22,6 +22,21 @@ namespace MagentoLv553SET.Maps
         public static readonly By passwordControl = By.XPath("//*[@id = 'password-strength-meter']");
         public static readonly By confirmPasswordField = By.XPath("//*[@id='password-confirmation']");
         public static readonly By signUpForNewslettersCheckbox = By.XPath("//*[@id='is_subscribed']");
-        public static readonly By submitRegistration = By.XPath("//button[@class='action submit primary']");
+        public static readonly By submitRegistrationButton = By.XPath("//button[@class='action submit primary']");
+
+        public static readonly By firstNameEmptyFieldErrorMessage = By.XPath("//*[@id='firstname-error']");
+        public static readonly By lastNameEmptyFieldErrorMessage = By.XPath("//*[@id='lastname-error']");
+        public static readonly By newUserEmailEmptyFieldErrorMessage = By.XPath("//*[@id='email_address-error']");
+        public static readonly By newUserPasswordEmptyFieldErrorMessage = By.XPath("//*[@id='password-error']");
+        public static readonly By newUserConfirmPasswordEmptyFieldErrorMessage = By.XPath("//*[@id='password-confirmation-error']");
+        public static readonly By newUserEmailWrongFormatErrorMessage = By.XPath("");
+        public static readonly By newUserPasswordWrongFormatErrorMessage = By.XPath("");
+        public static readonly By newUserConfirmPasswordNotTheSameErrorMessage = By.XPath("");
+
+        private RegistrationPageMap()
+        {
+                
+        }
     }
+
 }

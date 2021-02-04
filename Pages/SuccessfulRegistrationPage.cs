@@ -1,5 +1,6 @@
 ﻿using MagentoLv553SET.Components;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -13,25 +14,14 @@ namespace MagentoLv553SET.Pages
         {
 
         }
+        public IWebElement WelcomeMessage => PropertyGetters.
+            GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage,driver);
         
-        public IWebElement MyAccountTitle
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(SuccessfulRegistrationPageMap.myAccountTitle));
-                return driver.FindElement(SuccessfulRegistrationPageMap.myAccountTitle);
-            }
-        }
-        public IWebElement ChangePasswordLink
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(SuccessfulRegistrationPageMap.changePasswordLink));
-                return driver.FindElement(SuccessfulRegistrationPageMap.changePasswordLink);
-            }
-        }
+        public IWebElement MyAccountTitle => PropertyGetters.
+            GetVisibleWebElement(SuccessfulRegistrationPageMap.myAccountTitle, driver);
         
+        public IWebElement ChangePasswordLink=> PropertyGetters.
+            GetClickableWebElement(SuccessfulRegistrationPageMap.changePasswordLink,driver);        
+
     }
 }
