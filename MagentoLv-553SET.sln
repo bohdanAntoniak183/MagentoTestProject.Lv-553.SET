@@ -1,9 +1,10 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagentoLv-553SET", "MagentoLv-553SET.csproj", "{27D995F9-D696-4E06-8078-2BAB3F55EFC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagentoLv-553SET", "MagentoLv-553SET.csproj", "{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +12,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27D995F9-D696-4E06-8078-2BAB3F55EFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27D995F9-D696-4E06-8078-2BAB3F55EFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27D995F9-D696-4E06-8078-2BAB3F55EFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27D995F9-D696-4E06-8078-2BAB3F55EFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E7E927B8-4F5C-416B-8908-C9FF97D6E269}
+		SolutionGuid = {131DD54F-5C28-40D2-A9FC-38E8B6D445D2}
+
 	EndGlobalSection
 EndGlobal

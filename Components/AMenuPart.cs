@@ -1,14 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
-using MagentoLv553SET.Util;
+
+using MagentoLv553SET.Util
+using MagentoLv553SET.Components.ShoppingCartComponents;
+using MagentoLv553SET.Steps;
+
 
 namespace MagentoLv553SET.Components
 {
-    abstract class AMenuPart : BasePage
+    public abstract class AMenuPart : BasePage
     {
         public AMenuPart(IWebDriver webDriver) : base(webDriver)
         {
@@ -23,7 +27,28 @@ namespace MagentoLv553SET.Components
         public IWebElement SearchInput => PropertyGetters.GetClickableWebElement(MenuPartMap.searchInputMap,driver);
         
         public IWebElement ShoppingCartButton => PropertyGetters.GetClickableWebElement(MenuPartMap.shoppingCartButtonMap,driver);
+       
+            
+
+        public IWebElement SearchButton
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.searchButtonMap));
+                return driver.FindElement(MenuPartMap.searchButtonMap);
+            }
+        }
         
+        
+        public ShoppingCartDropDownComponent ShoppingCartDropDown
+        {
+            get
+            {
+                ClickOnShoppingCartButton();
+                return new ShoppingCartDropDownComponent(driver);
+            }
+        }     
 
         public string GetWelcomeLabelText()
         {
@@ -34,6 +59,12 @@ namespace MagentoLv553SET.Components
         {
             Logo.Click();
         }
+
+        public void ClickOnShoppingCartButton()
+        {
+            ShoppingCartButton.Click();
+        }
+
 
         public void ClearSearchInput()
         {
@@ -50,9 +81,9 @@ namespace MagentoLv553SET.Components
             SearchInput.SendKeys(data);
         }
 
-        public void ClickOnShoppingCartButton()
+        public void ClickOnSearchButton()
         {
-            ShoppingCartButton.Click();
+            SearchButton.Click();
         }
     }
 }

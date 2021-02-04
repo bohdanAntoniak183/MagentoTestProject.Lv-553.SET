@@ -1,14 +1,10 @@
-﻿using MagentoLv553SET.Pages;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace MagentoLv553SET.Util
 {
-    class PropertyGetters 
-
+    class PropertyGetters
     {
         private static WebDriverWait wait;
 
@@ -34,5 +30,15 @@ namespace MagentoLv553SET.Util
                     ExpectedConditions.ElementIsVisible(locator));
             return driver.FindElement(locator);
         }
+
+        public static IReadOnlyCollection<IWebElement> GetVisibleWebElements(By locator, IWebDriver driver)
+        {
+            SetWait(driver);
+
+            wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementIsVisible(locator));
+            return driver.FindElements(locator);
+        }
+
     }
 }

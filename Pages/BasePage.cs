@@ -1,9 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium.Chrome;
+
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MagentoLv553SET.Pages
 {
