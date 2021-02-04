@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
 
@@ -39,5 +39,6 @@ namespace MagentoLv553SET.Util
                     ExpectedConditions.ElementIsVisible(locator));
             return driver.FindElements(locator);
         }
+
     }
 }
