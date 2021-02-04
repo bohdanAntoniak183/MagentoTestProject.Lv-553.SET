@@ -1,32 +1,26 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Components.ShoppingCartComponents;
 using MagentoLv553SET.Steps;
 
 namespace MagentoLv553SET.Components
 {
     public abstract class AMenuPart : BasePage
     {
-        //protected IWebDriver driver;
-        protected IWebDriver webDriver;
-
-        public AMenuPart(IWebDriver webDriver) : base(webDriver)
-        {
-
-        }
-
         public IWebElement WelcomeLabel
         {
             get
             {
                 wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.welcomeLableMap));
+                    ExpectedConditions.ElementIsVisible(MenuPartMap.welcomeLableMap));
                 return driver.FindElement(MenuPartMap.welcomeLableMap);
             }
         }
+
         public IWebElement Logo
         {
             get
@@ -65,6 +59,19 @@ namespace MagentoLv553SET.Components
                     ExpectedConditions.ElementToBeClickable(MenuPartMap.shoppingCartButtonMap));
                 return driver.FindElement(MenuPartMap.shoppingCartButtonMap);
             }
+        }
+        public ShoppingCartDropDownComponent ShoppingCartDropDown
+        {
+            get
+            {
+                ClickOnShoppingCartButton();
+                return new ShoppingCartDropDownComponent(driver);
+            }
+        }
+
+        public AMenuPart(IWebDriver webDriver) : base(webDriver)
+        {
+
         }
 
         public string GetWelcomeLabelText()
