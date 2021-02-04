@@ -4,10 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
-
-    <AssemblyName>MagentoLv553SET</AssemblyName>
-
-    <RootNamespace>MagentoLv553SET</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +16,11 @@
     <PackageReference Include="Selenium.Support" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="87.0.4280.8800" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Util\" />
+    <Folder Include="Containers\" />
   </ItemGroup>
 
 </Project>

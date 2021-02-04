@@ -1,14 +1,15 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components.ShoppingCartComponents;
+using MagentoLv553SET.Steps;
 
 namespace MagentoLv553SET.Components
 {
-    abstract class AMenuPart : BasePage
+    public abstract class AMenuPart : BasePage
     {
         public IWebElement WelcomeLabel
         {
@@ -38,6 +39,18 @@ namespace MagentoLv553SET.Components
                 return driver.FindElement(MenuPartMap.searchInputMap);
             }
         }
+
+        public IWebElement SearchButton
+        {
+            get
+            {
+                wait.Until(SeleniumExtras.WaitHelpers.
+                    ExpectedConditions.ElementToBeClickable(MenuPartMap.searchButtonMap));
+                return driver.FindElement(MenuPartMap.searchButtonMap);
+            }
+        }
+
+        
         public IWebElement ShoppingCartButton
         {
             get
@@ -71,6 +84,12 @@ namespace MagentoLv553SET.Components
             Logo.Click();
         }
 
+        public void ClickOnShoppingCartButton()
+        {
+            ShoppingCartButton.Click();
+        }
+
+
         public void ClearSearchInput()
         {
             SearchInput.Clear();
@@ -86,9 +105,9 @@ namespace MagentoLv553SET.Components
             SearchInput.SendKeys(data);
         }
 
-        public void ClickOnShoppingCartButton()
+        public void ClickOnSearchButton()
         {
-            ShoppingCartButton.Click();
+            SearchButton.Click();
         }
     }
 }
