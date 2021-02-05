@@ -7,6 +7,7 @@ using System;
 using MagentoLv553SET.Components;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Pages
 {
@@ -14,17 +15,10 @@ namespace MagentoLv553SET.Pages
     {
         public HomePage(IWebDriver webDriver) : base(webDriver)
         {
-
+            
         }
 
-        public IWebElement MainSignInButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(HomePageMap.mainSignInButton));
-                return driver.FindElement(HomePageMap.mainSignInButton);
-            }
-        }
+        public IWebElement MainSignInButton => new PropertyGetters(driver).
+            GetVisibleWebElement(HomePageMap.mainSignInButton);
     }
 }

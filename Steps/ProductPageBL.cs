@@ -6,17 +6,39 @@ using OpenQA.Selenium;
 
 namespace MagentoLv553SET.Steps
 {
-    class ProductPageBL : SuccessfulLoginPageBL
+    class ProductPageBL : HomePageBL
     {
         private readonly ProductPage productPage;
         public ProductPageBL(IWebDriver webDriver) : base(webDriver)
         {
             productPage = new ProductPage(webDriver);
         }
-        public SuccessfulAddedProductPageBL ClickOnAddToCompareButton()
+        public ProductPageBL ClickOnAddToCompareButton()
         {
             productPage.AddToCompareButton.Click();
-            return new SuccessfulAddedProductPageBL(webDriver);
+            return this;
+        }
+
+        public MyAccountPageBL GoToMyAccountPage()
+        {
+            ClickOnAccountDropDown();
+            ClickOnMyAccountButton();
+
+            return new MyAccountPageBL(webDriver);
+        }
+
+        public string GetSuccessfulAddedProductMessage()
+        {
+            string successfulMessage = productPage.AddedProductMessage.Text;
+            return successfulMessage;
+        }
+        public void ClickOnAccountDropDown()
+        {
+            productPage.MainPageDropDown.Click();
+        }
+        public void ClickOnMyAccountButton()
+        {
+            productPage.MyAccountButton.Click();
         }
     }
 }

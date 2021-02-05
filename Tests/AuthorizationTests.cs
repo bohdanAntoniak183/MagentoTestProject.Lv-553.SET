@@ -23,20 +23,5 @@ namespace MagentoLv553SET.Tests
 
             Assert.IsTrue(actualResult.Contains(expectedResult));
         }
-
-        [Test]
-        public void AddToCompareListTest()
-        {
-            AuthorizationTest();
-
-            var homePage = new SuccessfulLoginPageBL(webDriver);
-            homePage
-                .ClickOnProductContainer()
-                .ClickOnAddToCompareButton();
-
-            var expectedResult = "You added product";
-            var actualResult = new SuccessfulAddedProductPageBL(webDriver).GetSuccessfulMessage();
-            Assert.IsTrue(actualResult.Contains(expectedResult));
-        }
     }
 }
