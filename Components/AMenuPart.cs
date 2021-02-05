@@ -6,11 +6,13 @@ using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components.ShoppingCartComponents;
 using MagentoLv553SET.Steps;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Components
 {
     public abstract class AMenuPart : BasePage
     {
+
         public IWebElement WelcomeLabel
         {
             get
@@ -71,7 +73,6 @@ namespace MagentoLv553SET.Components
 
         public AMenuPart(IWebDriver webDriver) : base(webDriver)
         {
-
         }
 
         public string GetWelcomeLabelText()
@@ -84,11 +85,16 @@ namespace MagentoLv553SET.Components
             Logo.Click();
         }
 
+        public void ClickOnNotEmptyShoppingCartButton()
+        {
+            new PropertyGetters(driver).GetVisibleWebElement(MenuPartMap.shoppingCartProductsCounterMap);
+            ClickOnShoppingCartButton();
+        }
+
         public void ClickOnShoppingCartButton()
         {
             ShoppingCartButton.Click();
         }
-
 
         public void ClearSearchInput()
         {

@@ -1,42 +1,33 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+using MagentoLv553SET.Pages;
 using System.Collections.Generic;
 
 namespace MagentoLv553SET.Util
 {
-    class PropertyGetters
+    public class PropertyGetters : BasePage
     {
-        private static WebDriverWait wait;
-
-        private static void SetWait(IWebDriver driver)
+        public PropertyGetters(IWebDriver webDriver) : base(webDriver)
         {
-            wait = new WebDriverWait(driver, new System.TimeSpan(10));
         }
 
-        public static IWebElement GetClickableWebElement(By locator, IWebDriver driver)
+        public IWebElement GetVisibleWebElement(By locator)
         {
-            SetWait(driver);
-
             wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(locator));
+                ExpectedConditions.ElementIsVisible(locator));
             return driver.FindElement(locator);
         }
 
-        public static IWebElement GetVisibleWebElement(By locator, IWebDriver driver)
+        public IWebElement GetClickableWebElement(By locator)
         {
-            SetWait(driver);
-
             wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(locator));
+                ExpectedConditions.ElementToBeClickable(locator));
             return driver.FindElement(locator);
         }
 
-        public static IReadOnlyCollection<IWebElement> GetVisibleWebElements(By locator, IWebDriver driver)
+        public IList<IWebElement> GetWebElements(By locator)
         {
-            SetWait(driver);
-
             wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(locator));
+                ExpectedConditions.PresenceOfAllElementsLocatedBy(locator));
             return driver.FindElements(locator);
         }
     }

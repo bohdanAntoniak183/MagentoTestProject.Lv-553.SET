@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using MagentoLv553SET.Data;
 using MagentoLv553SET.Pages;
+using MagentoLv553SET.Maps;
 using OpenQA.Selenium;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Steps
 {
@@ -127,6 +129,27 @@ namespace MagentoLv553SET.Steps
         {
             string AddMessaege = productPage.reviewTabPage.EmptyReviewErrorMessageText();
             return AddMessaege;
+        }
+
+        public void ClickOnRandomOptionsOfTheProduct()
+        {
+            Random random = new Random();
+
+            int sizeIndex = random.Next(0, productPage.SizeList.Count);
+            productPage.SizeList[sizeIndex].Click();
+
+            int colorIndex = random.Next(0, productPage.ColorList.Count);
+            productPage.ColorList[colorIndex].Click();
+        }
+
+        public ProductPageBL AddProductToTheShoppingCart()
+        {
+            ClickOnRandomOptionsOfTheProduct();
+            productPage.ClickOnAddToCartButton();
+
+            string temp = productPage.SuccessfulAddedProductMessage.Text;
+
+            return this;
         }
     }
 }

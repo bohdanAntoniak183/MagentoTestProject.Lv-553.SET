@@ -15,6 +15,8 @@ namespace MagentoLv553SET.Maps
         public static readonly By addReview = By.XPath("//*[@class='action add']");
         public static readonly By productCountField = By.XPath("//*[@id='qty']");
         public static readonly By successfulAddReviewMessage = By.XPath("//*[@class='message-success success message']");
-
+        public static readonly By sizeMap = By.XPath("//div[contains(@id, 'option-label-size')]");
+        public static readonly By colorMap = By.XPath("//div[contains(@id, 'option-label-color')]");
+        public static readonly By successfulAddedProductLabel = By.CssSelector("div.message-success.success.message");
     }
 }
