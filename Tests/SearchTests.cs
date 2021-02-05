@@ -1,24 +1,25 @@
 ﻿using System;
-using NUnit.Framework;
 using MagentoLv553SET.Steps;
-using MagentoLv553SET.Pages;
+using NUnit.Framework;
 
-namespace MagentoLv553SET.Tests.Search
+namespace MagentoLv553SET.Tests
 {
+
     [TestFixture]
-    public class SearchInNameTest : BaseTest
+    public class SearchTests : BaseTest
     {
 
         [Test]
-        public void SearchTest()
+        public void SearchInNameTest()
         {
+            string textToSearch = "Tank";
+
             var homePage = new HomePageBL(webDriver);
             homePage
                 .GetSearchComponentBL()
-                .SearchText("Tank");
+                .SearchText(textToSearch);
             new SearchPageBL(webDriver)
-                .GetListOfProductNames();
-
+                .VerifyProductNames(textToSearch);
         }
     }
 }

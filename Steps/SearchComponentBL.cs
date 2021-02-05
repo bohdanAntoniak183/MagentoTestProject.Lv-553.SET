@@ -22,5 +22,6 @@ namespace MagentoLv553SET.Steps
 
             return new SearchPageBL (webDriver);
         }
+
     }
 }
