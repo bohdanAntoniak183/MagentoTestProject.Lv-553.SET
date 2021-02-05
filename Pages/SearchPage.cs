@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MagentoLv553SET.Containers;
+using MagentoLv553SET.Components;
 using MagentoLv553SET.Maps;
 using OpenQA.Selenium;
 
@@ -9,22 +9,25 @@ namespace MagentoLv553SET.Pages
 {
     class SearchPage: BasePage
     {
+
+        private List<ProductContainerComponent> listOfProductContainers;
+
         public SearchPage(IWebDriver webDriver) : base(webDriver)
         {
         }
 
-        public IList<ProductContainer> getProductsContainers()
+        public List<ProductContainerComponent> getProductsContainers()
         {
+            listOfProductContainers = new List<ProductContainerComponent>();
             foreach (var webElement in ProductsContainers)
             {
-                listOfProductContainers.Add(new ProductContainer(webElement, driver));
+                listOfProductContainers.Add(new ProductContainerComponent (webElement, driver));
             }
 
             return listOfProductContainers;
         }
 
-
-        private IList<IWebElement> ProductsContainers
+        private List<IWebElement> ProductsContainers
         {
             get
             {
@@ -33,9 +36,5 @@ namespace MagentoLv553SET.Pages
                 return driver.FindElements(ProductContainerMap.allProducts).ToList();
             }
         }
-
-        private IList<ProductContainer> listOfProductContainers;
-
-
     }
 }

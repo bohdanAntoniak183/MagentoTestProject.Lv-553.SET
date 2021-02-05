@@ -3,19 +3,19 @@ using MagentoLv553SET.Maps;
 using MagentoLv553SET.Pages;
 using OpenQA.Selenium;
 
-namespace MagentoLv553SET.Containers
+namespace MagentoLv553SET.Components
 {
-    class ProductContainer: BasePage
+    public class ProductContainerComponent: BasePage
     {
 
         private IWebElement webElement;
 
-        public ProductContainer(IWebElement webElement, IWebDriver webDriver) : base(webDriver)
+        public ProductContainerComponent(IWebElement webElement, IWebDriver webDriver) : base(webDriver)
         {
             this.webElement = webElement;
         }
 
-        public string GetName ()
+        public string GetName()
         {
             return Name.Text;
         }
@@ -89,7 +89,5 @@ namespace MagentoLv553SET.Containers
                 return driver.FindElement(ProductContainerMap.addToCompareMap);
             }
         }
-
-
     }
 }
