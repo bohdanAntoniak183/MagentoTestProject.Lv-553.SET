@@ -9,6 +9,16 @@ namespace MagentoLv553SET.Tests.ShoppingCartDropDown
     class ShoppingCartDropDownTest : BaseTest
     {
         [Test]
+        public void EmptyShoppingCartDropDownTest()
+        {
+            HomePageBL homePage = new HomePageBL(webDriver);
+
+            string actualMessage = homePage.OpenEmptyShoppingCartDropDown().NoItemsTitle.Text;
+
+            Assert.AreEqual(TestsData.emptyShoppingCartDropDownMessage, actualMessage);
+        }
+
+        [Test]
         public void AddingProductsToShoppingCartTest()
         {
             HomePageBL homePageBL = new HomePageBL(webDriver);

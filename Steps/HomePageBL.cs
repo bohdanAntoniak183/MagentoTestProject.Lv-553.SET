@@ -53,5 +53,11 @@ namespace MagentoLv553SET.Steps
             homePage.ClickOnNotEmptyShoppingCartButton();
             return new ShoppingCartDropDownComponent(webDriver);
         }
+
+        public ShoppingCartDropDownComponent OpenEmptyShoppingCartDropDown()
+        {
+            homePage.ClickOnShoppingCartButton();
+            return new ShoppingCartDropDownComponent(webDriver);
+        }
     }
 }
