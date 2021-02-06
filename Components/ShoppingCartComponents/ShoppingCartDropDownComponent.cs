@@ -19,8 +19,7 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         {
             get
             {
-                return PropertyGetters.GetClickableWebElement(ShoppingCartDropDownMap.closeDropDownButtonMap,
-                    driver);
+                return new PropertyGetters(driver).GetClickableWebElement(ShoppingCartDropDownMap.closeDropDownButtonMap);
             }
         }
 
@@ -28,8 +27,7 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         {
             get
             {
-                return PropertyGetters.GetVisibleWebElement(ShoppingCartDropDownMap.noItemsTitleMap,
-                    driver);
+                return new PropertyGetters(driver).GetVisibleWebElement(ShoppingCartDropDownMap.noItemsTitleMap);
             }
         }
 
@@ -37,32 +35,28 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         {
             get
             {
-                return PropertyGetters.GetVisibleWebElement(ShoppingCartDropDownMap.itemsCountTitleMap,
-                    driver);
+                return new PropertyGetters(driver).GetVisibleWebElement(ShoppingCartDropDownMap.itemsCountTitleMap);
             }
         }
         public IWebElement TotalPriceTitle
         {
             get
             {
-                return PropertyGetters.GetVisibleWebElement(ShoppingCartDropDownMap.totalPriceTitleMap,
-                    driver);
+                return new PropertyGetters(driver).GetVisibleWebElement(ShoppingCartDropDownMap.totalPriceTitleMap);
             }
         }
         public IWebElement CheckoutButton
         {
             get
             {
-                return PropertyGetters.GetClickableWebElement(ShoppingCartDropDownMap.checkoutButtonMap,
-                    driver);
+                return new PropertyGetters(driver).GetClickableWebElement(ShoppingCartDropDownMap.checkoutButtonMap);
             }
         }
         public IWebElement ViewCartLink
         {
             get
             {
-                return PropertyGetters.GetClickableWebElement(ShoppingCartDropDownMap.viewCartLinkMap,
-                    driver);
+                return new PropertyGetters(driver).GetClickableWebElement(ShoppingCartDropDownMap.viewCartLinkMap);
             }
         }
         

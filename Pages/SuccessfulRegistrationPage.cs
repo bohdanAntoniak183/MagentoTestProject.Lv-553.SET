@@ -14,14 +14,12 @@ namespace MagentoLv553SET.Pages
         {
 
         }
-        public IWebElement WelcomeMessage => PropertyGetters.
-            GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage,driver);
+        public IWebElement WelcomeMessage => new PropertyGetters(driver).GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage);
         
-        public IWebElement MyAccountTitle => PropertyGetters.
-            GetVisibleWebElement(SuccessfulRegistrationPageMap.myAccountTitle, driver);
+        public IWebElement MyAccountTitle => new PropertyGetters(driver).GetVisibleWebElement(SuccessfulRegistrationPageMap.myAccountTitle);
         
-        public IWebElement ChangePasswordLink=> PropertyGetters.
-            GetClickableWebElement(SuccessfulRegistrationPageMap.changePasswordLink,driver);        
+        public IWebElement ChangePasswordLink=> new PropertyGetters(driver).GetClickableWebElement(SuccessfulRegistrationPageMap.changePasswordLink);
 
+        public IWebElement SuccessfulSaveInformationMessage => new PropertyGetters(driver).GetVisibleWebElement(SuccessfulRegistrationPageMap.successSaveMessage);
     }
 }

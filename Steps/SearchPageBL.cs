@@ -28,6 +28,19 @@ namespace MagentoLv553SET.Steps
 
             return productNames;
         }
+        //public List<string> GetListOfProductNames()
+        //{
+
+        //    List<string> productNames = new List<string>();
+
+        //    foreach (var element in searchPage.getProductsContainers())
+        //    {
+        //        productNames.Add(element.GetName());
+        //        Console.WriteLine(element.GetName());
+        //    }
+
+        //    return productNames;
+        //}
 
 
     }

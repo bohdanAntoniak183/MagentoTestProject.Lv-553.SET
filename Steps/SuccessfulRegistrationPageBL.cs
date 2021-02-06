@@ -15,6 +15,13 @@ namespace MagentoLv553SET.Steps
             successfulRegistrationPage = new SuccessfulRegistrationPage(webDriver);
         }
 
+
+
+        public void ClickOnChangePasswordLink()
+        {
+            successfulRegistrationPage.ChangePasswordLink.Click();
+        }
+
         public string GetWelcomeMessage()
         {
             string welcomeMessage = successfulRegistrationPage.WelcomeMessage.Text;
@@ -25,6 +32,12 @@ namespace MagentoLv553SET.Steps
             string myAccountTitle = successfulRegistrationPage.MyAccountTitle.Text;
             return myAccountTitle;
         }
-        
+
+        public string GetSuccessSavingInformationMessage()
+        {
+            string successSavingMessage = successfulRegistrationPage.SuccessfulSaveInformationMessage.Text;
+            return successSavingMessage;
+        }
+
     }
 }

@@ -34,6 +34,21 @@ namespace MagentoLv553SET.Tests
             var actualResult = new RegistrationPageBL(webDriver).GetErrorMessage();
             Assert.IsTrue(actualResult.Contains(expectedResult));
 
-        } 
+        }
+        [Test]
+        public void TryToRegistrationWithWrongFormateDataTest()
+        {
+            var homePage = new HomePageBL(webDriver);
+            homePage
+                .ClickOnCreateAnAccountButton()
+                .TryToCreateAnAccountWithWrongFormatData();
+
+            var expectedResult = "Minimum of different classes of characters in password is 3." +
+                " Classes of characters: Lower Case, Upper Case, Digits, Special Characters.";
+
+            var actualResult = new RegistrationPageBL(webDriver).GetErrorMessageWrongPasswordFormat();
+            Assert.IsTrue(actualResult.Contains(expectedResult));
+
+        }
     }
 }
