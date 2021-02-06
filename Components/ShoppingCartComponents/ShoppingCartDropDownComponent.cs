@@ -1,13 +1,13 @@
 ﻿using OpenQA.Selenium;
 using MagentoLv553SET.Util;
 using MagentoLv553SET.Maps;
+using System;
 
 namespace MagentoLv553SET.Components.ShoppingCartComponents
 {
     public class ShoppingCartDropDownComponent
     {
         private IWebDriver driver;
-        private PropertyGetters getter;
         public ShoppingCartDropDownProductContainer ProductContainer
         { 
             get
@@ -20,7 +20,7 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         {
             get
             {
-                return getter.GetClickableWebElement(ShoppingCartDropDownMap.closeDropDownButtonMap);
+                return new PropertyGetters(driver).GetClickableWebElement(ShoppingCartDropDownMap.closeDropDownButtonMap);
             }
         }
 
@@ -28,7 +28,7 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         {
             get
             {
-                return getter.GetVisibleWebElement(ShoppingCartDropDownMap.noItemsTitleMap);
+                return new PropertyGetters(driver).GetVisibleWebElement(ShoppingCartDropDownMap.noItemsTitleMap);
             }
         }
 
@@ -36,28 +36,28 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         {
             get
             {
-                return getter.GetVisibleWebElement(ShoppingCartDropDownMap.itemsCountTitleMap);
+                return new PropertyGetters(driver).GetVisibleWebElement(ShoppingCartDropDownMap.itemsCountTitleMap);
             }
         }
         public IWebElement TotalPriceTitle
         {
             get
             {
-                return getter.GetVisibleWebElement(ShoppingCartDropDownMap.totalPriceTitleMap);
+                return new PropertyGetters(driver).GetVisibleWebElement(ShoppingCartDropDownMap.totalPriceTitleMap);
             }
         }
         public IWebElement CheckoutButton
         {
             get
             {
-                return getter.GetClickableWebElement(ShoppingCartDropDownMap.checkoutButtonMap);
+                return new PropertyGetters(driver).GetClickableWebElement(ShoppingCartDropDownMap.checkoutButtonMap);
             }
         }
         public IWebElement ViewCartLink
         {
             get
             {
-                return getter.GetClickableWebElement(ShoppingCartDropDownMap.viewCartLinkMap);
+                return new PropertyGetters(driver).GetClickableWebElement(ShoppingCartDropDownMap.viewCartLinkMap);
             }
         }
         
@@ -65,7 +65,6 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         public ShoppingCartDropDownComponent(IWebDriver driver)
         {
             this.driver = driver;
-            getter = new PropertyGetters(driver);
         }
 
         public void ClickOnCloseDropDownButton()
@@ -73,12 +72,12 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
             CloseDropDownButton.Click();
         }
 
-        public string GetToItemsTitleText()
+        public string GetNoItemsTitleText()
         {
             return NoItemsTitle.Text;
         }
 
-        public string GetNoItemsTitleText()
+        public string GetItemsCountTitleText()
         {
             return ItemsCountTitle.Text;
         }
@@ -96,6 +95,11 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         public void ClickOnViewCartLink()
         {
             ViewCartLink.Click();
+        }
+
+        public int GetNumberOfItemsCounter()
+        {
+            return Convert.ToInt32(GetItemsCountTitleText());
         }
     }
 }

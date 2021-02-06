@@ -33,5 +33,20 @@ namespace MagentoLv553SET.Tests.ShoppingCartDropDown
                 Assert.Contains(element, actualProductNameList);
             }
         }
+
+        [Test]
+        public void CounterItemsTest()
+        {
+            HomePageBL homePageBL = new HomePageBL(webDriver);
+
+            int actualCounter = homePageBL
+                .SearchingAndAddingToCartProducts(TestsData.productsNames).
+                OpenNotEmptyShoppingCartDropDown().
+                ProductContainer.GetNumberOfProducts();
+
+            int expectedCounter = TestsData.productsNames.Count;
+
+            Assert.AreEqual(expectedCounter, actualCounter);
+        }
     }
 }

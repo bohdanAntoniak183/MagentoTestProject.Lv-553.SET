@@ -8,17 +8,15 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
     public class ShoppingCartDropDownProductContainer
     {
         private IWebDriver driver;
-        private PropertyGetters getter;
 
         public ShoppingCartDropDownProductContainer(IWebDriver driver)
         {
             this.driver = driver;
-            getter = new PropertyGetters(driver);
         }
 
         public List<string> GetListOfProductsNames()
         {
-            IList<IWebElement> productList = getter.GetWebElements(ShoppingCartDropDownMap.productNameMap);
+            IList<IWebElement> productList = new PropertyGetters(driver).GetWebElements(ShoppingCartDropDownMap.productNameMap);
 
             List<string> productNameList = new List<string>();
 
@@ -32,7 +30,7 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
 
         public List<string> GetListOfProductsPrices()
         {
-            IList<IWebElement> productList = getter.GetWebElements(ShoppingCartDropDownMap.productPriceMap);
+            IList<IWebElement> productList = new PropertyGetters(driver).GetWebElements(ShoppingCartDropDownMap.productPriceMap);
 
             List<string> productPriceList = new List<string>();
 
@@ -46,7 +44,7 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
 
         public int GetNumberOfProducts()
         {
-            IList<IWebElement> productList = getter.GetWebElements(ShoppingCartDropDownMap.productNameMap);
+            IList<IWebElement> productList = new PropertyGetters(driver).GetWebElements(ShoppingCartDropDownMap.productNameMap);
 
             return productList.Count;
         }

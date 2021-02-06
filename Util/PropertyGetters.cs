@@ -8,6 +8,7 @@ namespace MagentoLv553SET.Util
     {
         public PropertyGetters(IWebDriver webDriver) : base(webDriver)
         {
+
         }
 
         public IWebElement GetVisibleWebElement(By locator)

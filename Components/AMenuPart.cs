@@ -66,7 +66,6 @@ namespace MagentoLv553SET.Components
         {
             get
             {
-                ClickOnShoppingCartButton();
                 return new ShoppingCartDropDownComponent(driver);
             }
         }
