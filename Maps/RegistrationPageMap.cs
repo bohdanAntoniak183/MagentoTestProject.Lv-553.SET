@@ -29,9 +29,9 @@ namespace MagentoLv553SET.Maps
         public static readonly By newUserEmailEmptyFieldErrorMessage = By.XPath("//*[@id='email_address-error']");
         public static readonly By newUserPasswordEmptyFieldErrorMessage = By.XPath("//*[@id='password-error']");
         public static readonly By newUserConfirmPasswordEmptyFieldErrorMessage = By.XPath("//*[@id='password-confirmation-error']");
-        public static readonly By newUserEmailWrongFormatErrorMessage = By.XPath("");
-        public static readonly By newUserPasswordWrongFormatErrorMessage = By.XPath("");
-        public static readonly By newUserConfirmPasswordNotTheSameErrorMessage = By.XPath("");
+        //public static readonly By newUserEmailWrongFormatErrorMessage = By.XPath("");
+        //public static readonly By newUserPasswordWrongFormatErrorMessage = By.XPath("");
+        //public static readonly By newUserConfirmPasswordNotTheSameErrorMessage = By.XPath("");
 
         private RegistrationPageMap()
         {

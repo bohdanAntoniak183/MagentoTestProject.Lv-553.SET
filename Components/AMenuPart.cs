@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
 
-using MagentoLv553SET.Util
+using MagentoLv553SET.Util;
 using MagentoLv553SET.Components.ShoppingCartComponents;
 using MagentoLv553SET.Steps;
 
@@ -19,14 +19,13 @@ namespace MagentoLv553SET.Components
 
         }
 
-        public IWebElement WelcomeLabel => PropertyGetters.
-            GetClickableWebElement(MenuPartMap.welcomeLableMap, driver);
+        public IWebElement WelcomeLabel => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.welcomeLableMap);
 
-        public IWebElement Logo => PropertyGetters.GetClickableWebElement(MenuPartMap.logoMap,driver);
+        public IWebElement Logo => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.logoMap);
 
-        public IWebElement SearchInput => PropertyGetters.GetClickableWebElement(MenuPartMap.searchInputMap,driver);
+        public IWebElement SearchInput => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.searchInputMap);
         
-        public IWebElement ShoppingCartButton => PropertyGetters.GetClickableWebElement(MenuPartMap.shoppingCartButtonMap,driver);
+        public IWebElement ShoppingCartButton => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.shoppingCartButtonMap);
        
             
 

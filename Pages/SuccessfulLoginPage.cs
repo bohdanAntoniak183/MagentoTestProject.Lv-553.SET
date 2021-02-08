@@ -14,7 +14,7 @@ namespace MagentoLv553SET.Pages
         {
 
         }
-        public IWebElement WelcomeMessage => PropertyGetters.GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage, driver);
+        public IWebElement WelcomeMessage => new PropertyGetters(driver).GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage);
 
     }
 }

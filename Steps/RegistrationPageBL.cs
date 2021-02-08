@@ -1,20 +1,19 @@
 ﻿using MagentoLv553SET.Data;
 using MagentoLv553SET.Pages;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MagentoLv553SET.Steps
 {
     class RegistrationPageBL : HomePageBL
     {
         private readonly RegistrationPage registrationPage;
-        private static readonly string randomPassword = TestsDataGenerator.GenerateRandomPassword(10);
+
+        public static string randomPassword = TestsDataGenerator.GenerateRandomPassword(10);
         private static readonly int randomUserNameLength = 8;
         private static readonly int randomUserLastNameLength = 12;
-        private static readonly int randomUserEmailLength = 7; 
+        private static readonly int randomUserEmailLength = 7;
 
+        
 
         public RegistrationPageBL(IWebDriver webDriver) : base(webDriver)
         {
@@ -42,6 +41,18 @@ namespace MagentoLv553SET.Steps
 
             return this; 
         }
+        public RegistrationPageBL TryToCreateAnAccountWithWrongFormatData()
+        {
+            InputWrongNewUserFirstName();
+            InputWrongNewUserLastName();
+            InputWrongNewUserEmail();
+            InputWrongNewUserPassword();
+            InputWrongNewUserConfirmPassword();
+            ClickOnSubmitRegistrationButton();
+
+            return this;
+        }
+
         private void InputNewUserFirstName()
         {
             registrationPage.FirstNameField.Clear();
@@ -102,6 +113,39 @@ namespace MagentoLv553SET.Steps
         {
             string errorMessage = registrationPage.FirstNameEmptyFieldErrorMessage.Text;
             return errorMessage;
+        }
+        public string GetErrorMessageWrongPasswordFormat()
+        {
+            string errorMessage = registrationPage.NewUserPasswordEmptyFieldErrorMessage.Text;
+            return errorMessage;
+        }
+
+        
+
+        private void InputWrongNewUserFirstName()
+        {
+            registrationPage.FirstNameField.Clear();
+            registrationPage.FirstNameField.SendKeys(TestsDataGenerator.GenerateRandomData(randomUserLastNameLength));
+        }
+        private void InputWrongNewUserLastName()
+        {
+            registrationPage.LastNameField.Clear();
+            registrationPage.LastNameField.SendKeys(TestsDataGenerator.GenerateRandomData(randomUserLastNameLength));
+        }
+        private void InputWrongNewUserEmail()
+        {
+            registrationPage.EmailAddressField.Clear();
+            registrationPage.EmailAddressField.SendKeys(TestsDataGenerator.GenerateRandomData(randomUserLastNameLength));
+        }
+        private void InputWrongNewUserPassword()
+        {
+            registrationPage.PasswordField.Clear();
+            registrationPage.PasswordField.SendKeys(TestsDataGenerator.GenerateRandomUserName(randomUserLastNameLength,true));
+        }
+        private void InputWrongNewUserConfirmPassword()
+        {
+            registrationPage.ConfirmPasswordField.Clear();
+            registrationPage.ConfirmPasswordField.SendKeys(TestsDataGenerator.GenerateRandomUserName(randomUserLastNameLength,true));
         }
 
     }
