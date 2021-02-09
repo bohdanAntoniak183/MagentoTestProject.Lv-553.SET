@@ -4,6 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>MagentoLv553SET</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Util\" />
-    <Folder Include="Containers\" />
   </ItemGroup>
 
 </Project>

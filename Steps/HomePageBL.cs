@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
+using MagentoLv553SET.Components.ShoppingCartComponents;
 
 namespace MagentoLv553SET.Steps
 {
@@ -21,18 +22,54 @@ namespace MagentoLv553SET.Steps
         {
             return new SearchComponentBL (webDriver);
         }
+        
+        public HomePageBL SearchingAndAddingToCartProducts(List<string> productsList)
+        {
+            foreach(string productName in productsList)
+            {
+                SearchProduct(productName).AddingProductToTheShoppingCart(productName);
+            }
+
+            return new HomePageBL(webDriver);
+        }
+
+        public SearchPageBL SearchProduct(string productName)
+        {
+            homePage.ClickOnSearchInput();
+            homePage.SendKeysToSearchInput(productName);
+            homePage.SearchInput.Submit();
+
+            return new SearchPageBL(webDriver);
+        }
 
         public AuthorizationPageBL ClickOnMainSignInButton()
         {
             homePage.MainSignInButton.Click();
             return new AuthorizationPageBL(webDriver);
-
         }
+
+        public ShoppingCartDropDownComponentBL OpenNotEmptyShoppingCartDropDown()
+        {
+            homePage.ClickOnNotEmptyShoppingCartButton();
+            return new ShoppingCartDropDownComponentBL(webDriver);
+        }
+
+        public ShoppingCartDropDownComponent OpenEmptyShoppingCartDropDown()
+        {
+            homePage.ClickOnShoppingCartButton();
+            return new ShoppingCartDropDownComponent(webDriver);
+        }
+
+        public HomePageBL CloseShoppingCartDropDown()
+        {
+            homePage.ShoppingCartDropDown.ClickOnCloseDropDownButton();
+            return this;
+        }
+
         public RegistrationPageBL ClickOnCreateAnAccountButton()
         {
             homePage.CreateAnAccountButton.Click();
             return new RegistrationPageBL(webDriver);
         }          
-
     }
 }

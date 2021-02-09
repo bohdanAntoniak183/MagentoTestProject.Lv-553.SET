@@ -6,7 +6,7 @@ namespace MagentoLv553SET.Maps
     {
         public static readonly By closeDropDownButtonMap = By.CssSelector("button#btn-minicart-close");
         public static readonly By noItemsTitleMap = By.CssSelector("strong.subtitle.empty");
-        public static readonly By itemsCountTitleMap = By.CssSelector("strong.subtitle.empty");
+        public static readonly By itemsCountTitleMap = By.CssSelector("span.count");
         public static readonly By totalPriceTitleMap = By.CssSelector("div.amount.price-container span.price");
         public static readonly By checkoutButtonMap = By.CssSelector("button#top-cart-btn-checkout");
         public static readonly By viewCartLinkMap = By.CssSelector("a.action.viewcart");
