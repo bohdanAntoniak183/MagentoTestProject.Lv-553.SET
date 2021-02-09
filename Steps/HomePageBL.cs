@@ -48,10 +48,10 @@ namespace MagentoLv553SET.Steps
             return new AuthorizationPageBL(webDriver);
         }
 
-        public ShoppingCartDropDownComponent OpenNotEmptyShoppingCartDropDown()
+        public ShoppingCartDropDownComponentBL OpenNotEmptyShoppingCartDropDown()
         {
             homePage.ClickOnNotEmptyShoppingCartButton();
-            return new ShoppingCartDropDownComponent(webDriver);
+            return new ShoppingCartDropDownComponentBL(webDriver);
         }
 
         public ShoppingCartDropDownComponent OpenEmptyShoppingCartDropDown()

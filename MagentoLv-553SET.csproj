@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Util\" />
-    <Folder Include="Containers\" />
   </ItemGroup>
 
 </Project>

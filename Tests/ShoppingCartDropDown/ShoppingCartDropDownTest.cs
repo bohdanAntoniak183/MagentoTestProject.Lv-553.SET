@@ -19,14 +19,14 @@ namespace MagentoLv553SET.Tests.ShoppingCartDropDown
         }
 
         [Test]
-        public void AddingProductsToShoppingCartTest()
+        public void AddingProductsToShoppingCartDropDownTest()
         {
             HomePageBL homePageBL = new HomePageBL(webDriver);
 
-            List<string> actualProductNameList =  homePageBL
+            List<string> actualProductNameList = homePageBL
                 .SearchingAndAddingToCartProducts(TestsData.productsNames)
                 .OpenNotEmptyShoppingCartDropDown()
-                .ProductContainer.GetListOfProductsNames();
+                .GetProductsNames();
 
             foreach (string element in TestsData.productsNames)
             {
@@ -35,14 +35,14 @@ namespace MagentoLv553SET.Tests.ShoppingCartDropDown
         }
 
         [Test]
-        public void CounterItemsTest()
+        public void CounterItemsShoppingCartDropDownTest()
         {
             HomePageBL homePageBL = new HomePageBL(webDriver);
 
             int actualCounter = homePageBL
                 .SearchingAndAddingToCartProducts(TestsData.productsNames).
-                OpenNotEmptyShoppingCartDropDown().
-                ProductContainer.GetNumberOfProducts();
+                OpenNotEmptyShoppingCartDropDown()
+                .GetProductsNumber();
 
             int expectedCounter = TestsData.productsNames.Count;
 
@@ -50,14 +50,14 @@ namespace MagentoLv553SET.Tests.ShoppingCartDropDown
         }
 
         [Test]
-        public void TotalPriceTest()
+        public void TotalPriceShoppingCartDropDownTest()
         {
             HomePageBL homePageBL = new HomePageBL(webDriver);
 
             double actualTotalPrice = homePageBL
                 .SearchingAndAddingToCartProducts(TestsData.productsNames)
                 .OpenNotEmptyShoppingCartDropDown()
-                .GetTotalPriceNumber();
+                .GetTotalPrice();
 
             Assert.AreEqual(TestsData.totalPriceOfProducts, actualTotalPrice);
         }
