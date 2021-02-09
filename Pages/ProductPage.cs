@@ -5,7 +5,7 @@ using System.Text;
 using MagentoLv553SET.Components;
 using MagentoLv553SET.Maps;
 using MagentoLv553SET.Util;
-
+using OpenQA.Selenium.Support.UI;
 
 
 namespace MagentoLv553SET.Pages
@@ -34,9 +34,24 @@ namespace MagentoLv553SET.Pages
         {
             get
             {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(ProductPageMap.addToCartButton));
-                return driver.FindElement(ProductPageMap.addToCartButton);
+                return new PropertyGetters(driver).GetClickableWebElement(ProductPageMap.addToCartButton);
+            }
+        }
+
+        public IList<IWebElement> SizeList
+        {
+            get
+            {
+
+                return new PropertyGetters(driver).GetWebElements(ProductPageMap.sizeMap);
+            }
+        }
+
+        public IList<IWebElement> ColorList
+        {
+            get
+            {
+                return new PropertyGetters(driver).GetWebElements(ProductPageMap.colorMap);
             }
         }
 
@@ -103,9 +118,22 @@ namespace MagentoLv553SET.Pages
                 return driver.FindElement(ProductPageMap.successfulAddReviewMessage);
             }
         }
+
+        public IWebElement SuccessfulAddedProductMessage
+        {
+            get
+            {
+                return new PropertyGetters(driver).GetVisibleWebElement(ProductPageMap.successfulAddedProductLabel);
+            }
+        }
+
         public string SuccessfulAddReviewMessageText()
         {
             return SuccessfulAddReviewMessage.Text;
+        }
+        public void ClickOnAddToCartButton()
+        {
+            AddToCartButton.Click();
         }
     }
 }

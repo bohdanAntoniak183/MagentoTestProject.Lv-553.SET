@@ -4,7 +4,6 @@ using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
-
 using MagentoLv553SET.Util;
 using MagentoLv553SET.Components.ShoppingCartComponents;
 using MagentoLv553SET.Steps;
@@ -43,10 +42,9 @@ namespace MagentoLv553SET.Components
         {
             get
             {
-                ClickOnShoppingCartButton();
                 return new ShoppingCartDropDownComponent(driver);
             }
-        }     
+        }
 
         public string GetWelcomeLabelText()
         {
@@ -58,11 +56,16 @@ namespace MagentoLv553SET.Components
             Logo.Click();
         }
 
+        public void ClickOnNotEmptyShoppingCartButton()
+        {
+            new PropertyGetters(driver).GetVisibleWebElement(MenuPartMap.shoppingCartProductsCounterMap);
+            ClickOnShoppingCartButton();
+        }
+
         public void ClickOnShoppingCartButton()
         {
             ShoppingCartButton.Click();
         }
-
 
         public void ClearSearchInput()
         {

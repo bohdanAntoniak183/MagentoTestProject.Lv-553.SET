@@ -1,10 +1,10 @@
+
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using MagentoLv553SET.Pages;
 using OpenQA.Selenium.Support.UI;
-
+using System.Collections.Generic;
+using System.Text;
 
 namespace MagentoLv553SET.Util
 {

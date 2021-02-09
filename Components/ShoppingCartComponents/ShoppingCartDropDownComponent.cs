@@ -1,6 +1,9 @@
 ﻿using OpenQA.Selenium;
 using MagentoLv553SET.Util;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Steps;
+using System;
+using System.Globalization;
 
 namespace MagentoLv553SET.Components.ShoppingCartComponents
 {
@@ -71,12 +74,12 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
             CloseDropDownButton.Click();
         }
 
-        public string GetToItemsTitleText()
+        public string GetNoItemsTitleText()
         {
             return NoItemsTitle.Text;
         }
 
-        public string GetNoItemsTitleText()
+        public string GetItemsCountTitleText()
         {
             return ItemsCountTitle.Text;
         }
@@ -94,6 +97,30 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         public void ClickOnViewCartLink()
         {
             ViewCartLink.Click();
+        }
+
+        public int GetNumberOfItemsCounter()
+        {
+            return Convert.ToInt32(GetItemsCountTitleText());
+        }
+
+        public double GetTotalPriceNumber()
+        {
+            string totalPriceTitle = GetTotalPriceTitleText();
+            string changedPriceTitle = "";
+
+            foreach (char character in totalPriceTitle)
+            {
+                if (Char.IsDigit(character) || Char.IsPunctuation(character))
+                {
+                    changedPriceTitle += character;
+                }
+            }
+
+            NumberFormatInfo format = new NumberFormatInfo();
+            format.NumberDecimalSeparator = ".";
+
+            return Convert.ToDouble(changedPriceTitle, format);
         }
     }
 }

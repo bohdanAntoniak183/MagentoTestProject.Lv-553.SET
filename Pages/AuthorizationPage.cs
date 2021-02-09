@@ -18,6 +18,7 @@ namespace MagentoLv553SET.Pages
         public IWebElement EmailField => new PropertyGetters(driver).
             GetVisibleWebElement(AuthorizationPageMap.emailField);
 
+
         public IWebElement PasswordField => new PropertyGetters(driver).
             GetVisibleWebElement(AuthorizationPageMap.passwordField);
 

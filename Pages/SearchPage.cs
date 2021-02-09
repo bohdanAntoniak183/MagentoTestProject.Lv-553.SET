@@ -4,11 +4,23 @@ using System.Linq;
 using MagentoLv553SET.Containers;
 using MagentoLv553SET.Maps;
 using OpenQA.Selenium;
+using MagentoLv553SET.Components;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Pages
 {
-    class SearchPage: BasePage
+    class SearchPage : AMenuPart
     {
+        private List<ProductContainer> listOfProductContainers = new List<ProductContainer>();
+
+        private IList<IWebElement> ProductsContainers
+        {
+            get
+            {
+                return new PropertyGetters(driver).GetWebElements(ProductContainerMap.allProducts);
+            }
+        }
+
         public SearchPage(IWebDriver webDriver) : base(webDriver)
         {
         }
@@ -22,20 +34,5 @@ namespace MagentoLv553SET.Pages
 
             return listOfProductContainers;
         }
-
-
-        private IList<IWebElement> ProductsContainers
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(ProductContainerMap.allProducts));
-                return driver.FindElements(ProductContainerMap.allProducts).ToList();
-            }
-        }
-
-        private IList<ProductContainer> listOfProductContainers;
-
-
     }
 }
