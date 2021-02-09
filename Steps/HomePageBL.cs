@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium;
@@ -65,5 +65,11 @@ namespace MagentoLv553SET.Steps
             homePage.ShoppingCartDropDown.ClickOnCloseDropDownButton();
             return this;
         }
+
+        public RegistrationPageBL ClickOnCreateAnAccountButton()
+        {
+            homePage.CreateAnAccountButton.Click();
+            return new RegistrationPageBL(webDriver);
+        }          
     }
 }

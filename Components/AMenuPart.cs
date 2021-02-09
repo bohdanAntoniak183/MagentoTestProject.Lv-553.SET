@@ -4,43 +4,27 @@ using System.Text;
 using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+
+using MagentoLv553SET.Util;
 using MagentoLv553SET.Components.ShoppingCartComponents;
 using MagentoLv553SET.Steps;
 using MagentoLv553SET.Util;
+
 
 namespace MagentoLv553SET.Components
 {
     public abstract class AMenuPart : BasePage
     {
 
-        public IWebElement WelcomeLabel
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(MenuPartMap.welcomeLableMap));
-                return driver.FindElement(MenuPartMap.welcomeLableMap);
-            }
-        }
+        public IWebElement WelcomeLabel => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.welcomeLableMap);
 
-        public IWebElement Logo
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.logoMap));
-                return driver.FindElement(MenuPartMap.logoMap);
-            }
-        }
-        public IWebElement SearchInput
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.searchInputMap));
-                return driver.FindElement(MenuPartMap.searchInputMap);
-            }
-        }
+        public IWebElement Logo => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.logoMap);
+
+        public IWebElement SearchInput => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.searchInputMap);
+        
+        public IWebElement ShoppingCartButton => new PropertyGetters(driver).GetClickableWebElement(MenuPartMap.shoppingCartButtonMap);
+       
+            
 
         public IWebElement SearchButton
         {
@@ -51,17 +35,8 @@ namespace MagentoLv553SET.Components
                 return driver.FindElement(MenuPartMap.searchButtonMap);
             }
         }
-
         
-        public IWebElement ShoppingCartButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(MenuPartMap.shoppingCartButtonMap));
-                return driver.FindElement(MenuPartMap.shoppingCartButtonMap);
-            }
-        }
+        
         public ShoppingCartDropDownComponent ShoppingCartDropDown
         {
             get

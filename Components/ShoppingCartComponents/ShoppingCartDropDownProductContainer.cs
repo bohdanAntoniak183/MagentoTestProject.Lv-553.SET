@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MagentoLv553SET.Util;
 using MagentoLv553SET.Maps;
+using System.Collections;
 
 namespace MagentoLv553SET.Components.ShoppingCartComponents
 {

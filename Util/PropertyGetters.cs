@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 ﻿using OpenQA.Selenium;
 using MagentoLv553SET.Pages;
+=======
+using MagentoLv553SET.Pages;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+>>>>>>> master
 using System.Collections.Generic;
 
 namespace MagentoLv553SET.Util
@@ -8,7 +14,10 @@ namespace MagentoLv553SET.Util
     {
         public PropertyGetters(IWebDriver webDriver) : base(webDriver)
         {
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
         }
 
         public IWebElement GetVisibleWebElement(By locator)
@@ -32,4 +41,6 @@ namespace MagentoLv553SET.Util
             return driver.FindElements(locator);
         }
     }
+
 }
+

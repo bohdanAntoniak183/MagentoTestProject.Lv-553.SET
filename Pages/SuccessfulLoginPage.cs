@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Pages
 {
@@ -13,14 +14,7 @@ namespace MagentoLv553SET.Pages
         {
 
         }
-        public IWebElement WelcomeMessage
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(SuccessfulLoginPageMap.welcomeMessage));
-                return driver.FindElement(SuccessfulLoginPageMap.welcomeMessage);
-            }
-        }
+        public IWebElement WelcomeMessage => new PropertyGetters(driver).GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage);
+
     }
 }
