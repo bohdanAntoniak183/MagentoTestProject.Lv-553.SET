@@ -31,6 +31,5 @@ namespace MagentoLv553SET.Pages
 
         public IWebElement CompareProductsItemsLink => new PropertyGetters(driver).
             GetClickableWebElement(SuccessfulLoginPageMap.compareProductsLink);
-
     }
 }

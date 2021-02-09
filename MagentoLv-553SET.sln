@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagentoLv-553SET", "MagentoLv-553SET.csproj", "{24DF785B-FE4D-488D-A6FA-00E61D1294DA}"
+=======
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagentoLv-553SET", "MagentoLv-553SET.csproj", "{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}"
+
+>>>>>>> 5dc2e8d0151e2ea3fa33fbe84795a798ceaeb3ce
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +21,28 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{24DF785B-FE4D-488D-A6FA-00E61D1294DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{24DF785B-FE4D-488D-A6FA-00E61D1294DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24DF785B-FE4D-488D-A6FA-00E61D1294DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24DF785B-FE4D-488D-A6FA-00E61D1294DA}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E24DC32-A997-4ACF-B0CD-6EC16C3CD873}.Release|Any CPU.Build.0 = Release|Any CPU
+
+>>>>>>> 5dc2e8d0151e2ea3fa33fbe84795a798ceaeb3ce
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< HEAD
 		SolutionGuid = {2A9F984F-942C-442A-A8A5-AB53F855DC2F}
+=======
+		SolutionGuid = {131DD54F-5C28-40D2-A9FC-38E8B6D445D2}
+
+>>>>>>> 5dc2e8d0151e2ea3fa33fbe84795a798ceaeb3ce
 	EndGlobalSection
 EndGlobal

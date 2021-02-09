@@ -4,10 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
-
-    <AssemblyName>MagentoLv553SET</AssemblyName>
-
-    <RootNamespace>MagentoLv553SET</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,8 +22,13 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="Allure-Reports\" />
     <Folder Include="Allure-Results\" />
+=======
+    <Folder Include="Util\" />
+    <Folder Include="Containers\" />
+>>>>>>> 5dc2e8d0151e2ea3fa33fbe84795a798ceaeb3ce
   </ItemGroup>
 
 </Project>
