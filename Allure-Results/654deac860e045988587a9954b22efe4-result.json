@@ -1,0 +1,67 @@
+{
+  "uuid": "aef0a5da-d722-4a76-90d4-2f53afc09563-tr-0-1018",
+  "historyId": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.UpdateCreatedPet",
+  "fullName": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.UpdateCreatedPet",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "UpdateCreatedPet"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    }
+  ],
+  "links": [],
+  "name": "UpdateCreatedPet",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.UpdateCreatedPet() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPITests.cs:line 45\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "UpdateCreatedPet",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.UpdateCreatedPet() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPITests.cs:line 45\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "11613fa747b24a30b3bd8ab2961d428d-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612889298998,
+      "stop": 1612889300991
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612889298991,
+  "stop": 1612889301016
+}

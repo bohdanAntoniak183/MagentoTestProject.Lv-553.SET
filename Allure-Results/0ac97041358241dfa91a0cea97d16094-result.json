@@ -1,0 +1,63 @@
+{
+  "uuid": "88647a7a-581d-4c6e-ac1a-31f6a520639e-tr-0-1001",
+  "historyId": "MagentoLv553SET.Tests.AuthorizationTests.AuthorizationTest",
+  "fullName": "MagentoLv553SET.Tests.AuthorizationTests.AuthorizationTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.AuthorizationTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AuthorizationTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.AuthorizationTests"
+    }
+  ],
+  "links": [],
+  "name": "AuthorizationTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AuthorizationTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "eeefd9ddfbfc4bcba43cdafc0e039798-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612893281643,
+      "stop": 1612893309928
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612893281639,
+  "stop": 1612893309960
+}

@@ -4,10 +4,14 @@ using System.Collections.Generic;
 using System.Text;
 using MagentoLv553SET.Steps;
 using OpenQA.Selenium;
+using NUnit.Allure.Core;
+using MagentoLv553SET.Pages;
 
 namespace MagentoLv553SET.Tests
 {
     [TestFixture]
+    [AllureNUnit]
+    [Parallelizable]
     class CompareProductsTests : BaseTest
     {
 
@@ -91,11 +95,11 @@ namespace MagentoLv553SET.Tests
 
             var firstActualResult = new CompareProductsPageBL(webDriver).GetEmptyListMessage();
             var secondActualResult = new CompareProductsPageBL(webDriver).GetDeletedProductMessage();
-            Assert.AreEqual(firstExpectedResult,firstActualResult);
-            Assert.IsTrue(secondActualResult.Contains(secondExpectedResult));
 
+            Assert.AreEqual(firstExpectedResult, firstActualResult);
+            Assert.IsTrue(secondActualResult.Contains(secondExpectedResult));
         }
-        
+
         [Test]
         public void OpenCompareProductsPageThroughLinkTest()
         {
@@ -108,7 +112,7 @@ namespace MagentoLv553SET.Tests
 
             var expectedResult = "Compare Products";
             var actualResult = new CompareProductsPageBL(webDriver).GetCompareProductsPageTitle();
-            Assert.AreEqual(expectedResult,actualResult);
+            Assert.AreEqual(expectedResult, actualResult);
         }
 
         [Test]
@@ -144,9 +148,11 @@ namespace MagentoLv553SET.Tests
 
             var firstActualResult = new WishListPageBL(webDriver).GetWishListTitle();
             var secondActualResult = new WishListPageBL(webDriver).GetAddedProductToWishListMessage();
+
             Assert.AreEqual(firstExpectedResult, firstActualResult);
             Assert.IsTrue(secondActualResult.Contains(secondExpectedResult));
         }
+
         [Test]
         public void AddFromCompareListToShoppingCartTest()
         {
@@ -161,7 +167,6 @@ namespace MagentoLv553SET.Tests
             var expectedResult = "shopping cart";
             var actualResult = new CompareProductsPageBL(webDriver).GetAddedProductToCartMessage();
             Assert.IsTrue(actualResult.Contains(expectedResult));
-
         }
     }
 }

@@ -1,0 +1,59 @@
+{
+  "uuid": "6063c7e9-1769-4f56-8c1d-d4515abf03e3-tc-0-1002",
+  "name": "MagentoLv553SET.Tests.CompareProductsTests.RemoveComparedProductTest",
+  "children": [
+    "ed237d79-5d9b-4e50-8ac1-c78d009ac537-tr-0-1007"
+  ],
+  "befores": [
+    {
+      "name": "DoBeforeAllTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612876511925,
+      "stop": 1612876511925
+    },
+    {
+      "name": "DoBeforeEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612876511927,
+      "stop": 1612876511927
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612876511927,
+      "stop": 1612876511927
+    }
+  ],
+  "links": [],
+  "start": 1612876476818,
+  "stop": 1612876512386
+}

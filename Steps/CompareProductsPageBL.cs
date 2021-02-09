@@ -50,7 +50,7 @@ namespace MagentoLv553SET.Steps
         public void AsseptQuestionMessage()
         {
             compareProductsPage.QuestionMessage.Click();
-        } 
+        }
 
         public void ClickCompareProductDeleteButton()
         {

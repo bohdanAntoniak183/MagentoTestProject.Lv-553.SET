@@ -1,0 +1,12 @@
+{
+  "uuid": "926f1f79-33f3-4927-a02f-ddff677989b2-tc-0-1012",
+  "name": "MagentoLv553SET.Tests.RestAPITests.MagentoRestAPITests.GetCountryWithIdTest",
+  "children": [
+    "db7fb929-3553-4cf3-9cb7-e329fc60b1bb-tr-0-1013"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1612893752726,
+  "stop": 1612893753447
+}

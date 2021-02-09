@@ -1,0 +1,67 @@
+{
+  "uuid": "e2dde39e-95ce-400d-b976-b4956273f008-tr-0-1010",
+  "historyId": "MagentoLv553SET.Tests.CompareProductsTests.AddFromCompareListToWishListTest",
+  "fullName": "MagentoLv553SET.Tests.CompareProductsTests.AddFromCompareListToWishListTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.CompareProductsTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddFromCompareListToWishListTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.CompareProductsTests"
+    }
+  ],
+  "links": [],
+  "name": "AddFromCompareListToWishListTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "",
+    "trace": "   at MagentoLv553SET.Tests.CompareProductsTests.AddFromCompareListToWishListTest() in D:\\MagentoTestProject\\Tests\\CompareProductsTests.cs:line 157\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddFromCompareListToWishListTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "",
+        "trace": "   at MagentoLv553SET.Tests.CompareProductsTests.AddFromCompareListToWishListTest() in D:\\MagentoTestProject\\Tests\\CompareProductsTests.cs:line 157\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "863fd63328f146e38545f0696c112752-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612876743048,
+      "stop": 1612876783563
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612876743044,
+  "stop": 1612876783600
+}

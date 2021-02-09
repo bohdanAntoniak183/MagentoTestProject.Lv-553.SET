@@ -5,6 +5,7 @@ using System.Text;
 using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components;
 using MagentoLv553SET.Util;
+using MagentoLv553SET.Data;
 
 namespace MagentoLv553SET.Pages
 {

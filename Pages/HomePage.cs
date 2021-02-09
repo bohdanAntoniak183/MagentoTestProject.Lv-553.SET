@@ -17,8 +17,8 @@ namespace MagentoLv553SET.Pages
         {
             
         }
-
         public IWebElement MainSignInButton => new PropertyGetters(driver).
-            GetVisibleWebElement(HomePageMap.mainSignInButton);
+            GetClickableWebElement(HomePageMap.mainSignInButton);
+
     }
 }

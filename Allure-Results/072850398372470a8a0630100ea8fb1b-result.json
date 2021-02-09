@@ -1,0 +1,67 @@
+{
+  "uuid": "8ee0318c-1773-44e6-8a7d-2673d6500b2c-tr-0-1017",
+  "historyId": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateEmptyCart",
+  "fullName": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateEmptyCart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "GreateEmptyCart"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    }
+  ],
+  "links": [],
+  "name": "GreateEmptyCart",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Runtime.Serialization.SerializationException : There was an error deserializing the object of type System.String. Encountered unexpected character 'ï'.\r\n  ----> System.Xml.XmlException : Encountered unexpected character 'ï'.",
+    "trace": "   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.ReadObject(XmlDictionaryReader reader)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.ReadObject(Stream stream)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(Stream stream)\r\n   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPIData.GetNewPetInformation() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPIData.cs:line 19\r\n   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateEmptyCart() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPITests.cs:line 19\r\n--XmlException\r\n   at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, XmlException exception)\r\n   at System.Runtime.Serialization.Json.XmlJsonReader.ReadAttributes()\r\n   at System.Runtime.Serialization.Json.XmlJsonReader.ReadNonExistentElementName(StringHandleConstStringType elementName)\r\n   at System.Runtime.Serialization.Json.XmlJsonReader.Read()\r\n   at System.Xml.XmlBaseReader.IsStartElement()\r\n   at System.Xml.XmlBaseReader.IsStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)\r\n   at System.Runtime.Serialization.XmlReaderDelegator.IsStartElement(XmlDictionaryString localname, XmlDictionaryString ns)\r\n   at System.Runtime.Serialization.XmlObjectSerializer.IsRootElement(XmlReaderDelegator reader, DataContract contract, XmlDictionaryString name, XmlDictionaryString ns)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.InternalIsStartObject(XmlReaderDelegator reader)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)\r\n   at System.Runtime.Serialization.XmlObjectSerializer.InternalReadObject(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)\r\n   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "GreateEmptyCart",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Runtime.Serialization.SerializationException : There was an error deserializing the object of type System.String. Encountered unexpected character 'ï'.\r\n  ----> System.Xml.XmlException : Encountered unexpected character 'ï'.",
+        "trace": "   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.ReadObject(XmlDictionaryReader reader)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.ReadObject(Stream stream)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(Stream stream)\r\n   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPIData.GetNewPetInformation() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPIData.cs:line 19\r\n   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateEmptyCart() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPITests.cs:line 19\r\n--XmlException\r\n   at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, XmlException exception)\r\n   at System.Runtime.Serialization.Json.XmlJsonReader.ReadAttributes()\r\n   at System.Runtime.Serialization.Json.XmlJsonReader.ReadNonExistentElementName(StringHandleConstStringType elementName)\r\n   at System.Runtime.Serialization.Json.XmlJsonReader.Read()\r\n   at System.Xml.XmlBaseReader.IsStartElement()\r\n   at System.Xml.XmlBaseReader.IsStartElement(XmlDictionaryString localName, XmlDictionaryString namespaceUri)\r\n   at System.Runtime.Serialization.XmlReaderDelegator.IsStartElement(XmlDictionaryString localname, XmlDictionaryString ns)\r\n   at System.Runtime.Serialization.XmlObjectSerializer.IsRootElement(XmlReaderDelegator reader, DataContract contract, XmlDictionaryString name, XmlDictionaryString ns)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.InternalIsStartObject(XmlReaderDelegator reader)\r\n   at System.Runtime.Serialization.Json.DataContractJsonSerializerImpl.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)\r\n   at System.Runtime.Serialization.XmlObjectSerializer.InternalReadObject(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)\r\n   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "03166a47cdca4fc18cca532439cdbc89-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612886776539,
+      "stop": 1612886778942
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612886776535,
+  "stop": 1612886778964
+}

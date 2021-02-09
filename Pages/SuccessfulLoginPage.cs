@@ -14,7 +14,7 @@ namespace MagentoLv553SET.Pages
         {
 
         }
-        public IWebElement ComparisonListLink => new  PropertyGetters(driver).
+        public IWebElement ComparisonListLink => new PropertyGetters(driver).
             GetClickableWebElement(SuccessfulLoginPageMap.comparisonListLink);
 
         public IWebElement AddedProductMessage => new PropertyGetters(driver).
@@ -26,7 +26,7 @@ namespace MagentoLv553SET.Pages
         public IWebElement MainPageProductContainer => new PropertyGetters(driver).
             GetClickableWebElement(SuccessfulLoginPageMap.mainPageProductContainer);
 
-        public IWebElement WelcomeMessage => new  PropertyGetters(driver).
+        public IWebElement WelcomeMessage => new PropertyGetters(driver).
             GetVisibleWebElement(SuccessfulLoginPageMap.welcomeMessage);
 
         public IWebElement CompareProductsItemsLink => new PropertyGetters(driver).

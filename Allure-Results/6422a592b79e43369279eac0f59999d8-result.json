@@ -1,0 +1,63 @@
+{
+  "uuid": "6e1d6b89-a681-43b1-ab77-a36fb5425c8f-tr-0-1013",
+  "historyId": "MagentoLv553SET.Tests.RestAPITests.RestAPItests.GetCountryWithIdTest",
+  "fullName": "MagentoLv553SET.Tests.RestAPITests.RestAPItests.GetCountryWithIdTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.RestAPITests.RestAPItests"
+    },
+    {
+      "name": "testMethod",
+      "value": "GetCountryWithIdTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.RestAPITests.RestAPItests"
+    }
+  ],
+  "links": [],
+  "name": "GetCountryWithIdTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "GetCountryWithIdTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "49464005de99499593c9b89e89399648-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612877338380,
+      "stop": 1612877340324
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612877338377,
+  "stop": 1612877340348
+}

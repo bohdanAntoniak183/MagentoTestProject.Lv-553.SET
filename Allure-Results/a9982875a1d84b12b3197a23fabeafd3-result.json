@@ -1,0 +1,67 @@
+{
+  "uuid": "44484765-709d-43d3-ad94-75dc62976bfb-tr-0-1017",
+  "historyId": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateNewPet",
+  "fullName": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateNewPet",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "GreateNewPet"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    }
+  ],
+  "links": [],
+  "name": "GreateNewPet",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: True\r\n  But was:  False\r\n",
+    "trace": "   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateNewPet() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPITests.cs:line 25\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "GreateNewPet",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: True\r\n  But was:  False\r\n",
+        "trace": "   at MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.GreateNewPet() in D:\\MagentoTestProject\\Tests\\RestAPITests\\PetStoreRestAPITests.cs:line 25\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9f1ffbbd5b3842718db2a41c3071b424-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612887670256,
+      "stop": 1612887671840
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612887670247,
+  "stop": 1612887671861
+}

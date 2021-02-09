@@ -1,0 +1,67 @@
+{
+  "uuid": "bcb024b5-21b2-47ab-b25d-add51868dd76-tr-0-1015",
+  "historyId": "MagentoLv553SET.Tests.RestAPITests.RestAPITests.DeletePaymentOrderInformation",
+  "fullName": "MagentoLv553SET.Tests.RestAPITests.RestAPITests.DeletePaymentOrderInformation",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.RestAPITests.RestAPITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeletePaymentOrderInformation"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.RestAPITests.RestAPITests"
+    }
+  ],
+  "links": [],
+  "name": "DeletePaymentOrderInformation",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 47 but was 2. Strings differ at index 0.\r\n  Expected: \"{\"message\":\"Request does not match any route.\"}\"\r\n  But was:  \"[]\"\r\n  -----------^\r\n",
+    "trace": "   at MagentoLv553SET.Tests.RestAPITests.RestAPITests.DeletePaymentOrderInformation() in D:\\MagentoTestProject\\Tests\\RestAPITests\\RestAPITests.cs:line 50\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "DeletePaymentOrderInformation",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 47 but was 2. Strings differ at index 0.\r\n  Expected: \"{\"message\":\"Request does not match any route.\"}\"\r\n  But was:  \"[]\"\r\n  -----------^\r\n",
+        "trace": "   at MagentoLv553SET.Tests.RestAPITests.RestAPITests.DeletePaymentOrderInformation() in D:\\MagentoTestProject\\Tests\\RestAPITests\\RestAPITests.cs:line 50\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6dea72a41644475cbcbe67636a993446-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612879638021,
+      "stop": 1612879639550
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612879638018,
+  "stop": 1612879639573
+}

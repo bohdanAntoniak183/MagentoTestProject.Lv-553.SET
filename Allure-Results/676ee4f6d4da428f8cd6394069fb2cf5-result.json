@@ -1,0 +1,67 @@
+{
+  "uuid": "e1ab6599-51ad-438a-bd4e-00646978cf4a-tr-0-1007",
+  "historyId": "MagentoLv553SET.Tests.CompareProductsTests.RemoveComparedProductTest",
+  "fullName": "MagentoLv553SET.Tests.CompareProductsTests.RemoveComparedProductTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.CompareProductsTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "RemoveComparedProductTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.CompareProductsTests"
+    }
+  ],
+  "links": [],
+  "name": "RemoveComparedProductTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "",
+    "trace": "   at MagentoLv553SET.Tests.CompareProductsTests.RemoveComparedProductTest() in D:\\MagentoTestProject\\Tests\\CompareProductsTests.cs:line 101\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "RemoveComparedProductTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "",
+        "trace": "   at MagentoLv553SET.Tests.CompareProductsTests.RemoveComparedProductTest() in D:\\MagentoTestProject\\Tests\\CompareProductsTests.cs:line 101\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "86cc6cb5beac4ec580fec3ff622f2809-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612876660312,
+      "stop": 1612876692307
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612876660302,
+  "stop": 1612876692328
+}

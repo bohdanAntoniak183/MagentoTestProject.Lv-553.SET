@@ -1,0 +1,63 @@
+{
+  "uuid": "122eb156-8e05-4cdd-bd5f-277124b31d3d-tr-0-1017",
+  "historyId": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.CreateNewPet",
+  "fullName": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.CreateNewPet",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ACER-EMUBIS"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateNewPet"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests"
+    }
+  ],
+  "links": [],
+  "name": "CreateNewPet",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateNewPet",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "032638ae1ca3415d9195849129c2e8d3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612893472521,
+      "stop": 1612893474334
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612893472513,
+  "stop": 1612893474360
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "a2378564-56de-4cd6-a4ac-3cdfc7ac3fa8-tc-0-1016",
+  "name": "MagentoLv553SET.Tests.RestAPITests.PetStoreRestAPITests.CreateNewPet",
+  "children": [
+    "c7d3e9cb-a1d9-4c0d-9544-8d2b55788e0f-tr-0-1017"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1612889238608,
+  "stop": 1612889240278
+}

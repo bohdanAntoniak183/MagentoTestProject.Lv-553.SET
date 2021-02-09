@@ -64,8 +64,8 @@ namespace MagentoLv553SET.Steps
 
         public string GetSuccessfulAddedProductMessage()
         {
-           string successfulAddedProductMessage = successfulLoginPage.AddedProductMessage.Text;
-           return successfulAddedProductMessage;
+            string successfulAddedProductMessage = successfulLoginPage.AddedProductMessage.Text;
+            return successfulAddedProductMessage;
         }
     }
 }
