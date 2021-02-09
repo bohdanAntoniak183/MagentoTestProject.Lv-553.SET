@@ -1,0 +1,63 @@
+{
+  "uuid": "90130a50-f013-4aed-93c2-8ee3e2acdc05-tr-0-1019",
+  "historyId": "MagentoLv553SET.Tests.WishListTests.ShareWishListTest",
+  "fullName": "MagentoLv553SET.Tests.WishListTests.ShareWishListTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ShareWishListTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    }
+  ],
+  "links": [],
+  "name": "ShareWishListTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "ShareWishListTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a944a241c46a47ad8bd4e5b04a672e89-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904477066,
+      "stop": 1612904499703
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904477063,
+  "stop": 1612904499717
+}

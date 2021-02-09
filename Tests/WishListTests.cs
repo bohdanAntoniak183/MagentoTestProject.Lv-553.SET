@@ -3,10 +3,17 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
+using NUnit.Allure.Core;
+using Allure.Commons;
+using NUnit.Allure.Attributes;
+using System.ComponentModel;
+
 
 namespace MagentoLv553SET.Tests
 {
     [TestFixture]
+    [AllureNUnit]
     class WishListTests : BaseTest
     {
         [Test]
@@ -145,9 +152,45 @@ namespace MagentoLv553SET.Tests
                 .ShareWishListWithIncorrectEmail();
 
 
-            var expectedResult = "Please enter valid email addresses, separated by commas.";
+            var expectedResult = "Please enter valid email addresses, separated by commas. For example, johndoe@domain.com, johnsmith@domain.com.";
             var actualResult = new WishListSharingPageBL(webDriver).GetFailSharingMessage();
 
+            Assert.AreEqual(expectedResult,actualResult);
+        }
+
+        [Test]
+        public void AddToCartWithSuchBigCountOfProductsTest()
+        {
+            var homePage = new HomePageBL(webDriver);
+            homePage
+                .ClickOnMainSignInButton()
+                .LogIntoAccount()
+                .ClickOnFucionBackPackButton()
+                .ClickOnAddToWishListButton()
+                .InputSuchBigCountForFusionBackPackProduct()
+                .ClickOnAddToCartButtonForIncorrectCountFusionBackPack();
+
+            var expectedResult = "The most you may purchase is 10000.";
+            var actualResult = new FusionBackPackPageBL(webDriver).GetMessageForSuchBigCount();
+            Console.WriteLine(actualResult);
+            Assert.AreEqual(expectedResult,actualResult);
+        }
+
+        [Test]
+        public void AddToCartWithZeroCountOfProductsTest()
+        {
+            var homePage = new HomePageBL(webDriver);
+            homePage
+                .ClickOnMainSignInButton()
+                .LogIntoAccount()
+                .ClickOnFucionBackPackButton()
+                .ClickOnAddToWishListButton()
+                .InputZeroCountForFusionBackPackProduct()
+                .ClickOnAddToCartButtonForFusionBackPack();
+            
+            var expectedResult = "to your shopping cart.";
+            var actualResult = new WishListPageBL(webDriver).GetSuccessAddedToShoppingCartMessage();
+            Console.WriteLine(actualResult);
             Assert.IsTrue(actualResult.Contains(expectedResult));
         }
     }

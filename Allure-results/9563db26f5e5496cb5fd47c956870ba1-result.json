@@ -1,0 +1,67 @@
+{
+  "uuid": "1dbcb059-3b44-45c1-81e6-ba6b3ebea15c-tr-0-1014",
+  "historyId": "MagentoLv553SET.Tests.WishListTests.RemoveFromWishListTest",
+  "fullName": "MagentoLv553SET.Tests.WishListTests.RemoveFromWishListTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "RemoveFromWishListTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    }
+  ],
+  "links": [],
+  "name": "RemoveFromWishListTest",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=88.0.4324.150)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at MagentoLv553SET.Pages.WishListPage.ClickOnRemoveItemFusionBackPack() in D:\\C#_Projects\\MagentoSet\\Pages\\WishListPage.cs:line 54\r\n   at MagentoLv553SET.Steps.WishListPageBL.ClickOnRemoveFromWishListButton() in D:\\C#_Projects\\MagentoSet\\Steps\\WishListPageBL.cs:line 35\r\n   at MagentoLv553SET.Tests.WishListTests.RemoveFromWishListTest() in D:\\C#_Projects\\MagentoSet\\Tests\\WishListTests.cs:line 39"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "RemoveFromWishListTest",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=88.0.4324.150)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at MagentoLv553SET.Pages.WishListPage.ClickOnRemoveItemFusionBackPack() in D:\\C#_Projects\\MagentoSet\\Pages\\WishListPage.cs:line 54\r\n   at MagentoLv553SET.Steps.WishListPageBL.ClickOnRemoveFromWishListButton() in D:\\C#_Projects\\MagentoSet\\Steps\\WishListPageBL.cs:line 35\r\n   at MagentoLv553SET.Tests.WishListTests.RemoveFromWishListTest() in D:\\C#_Projects\\MagentoSet\\Tests\\WishListTests.cs:line 39"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "91645d83bf824fef82d9eb3ea4876013-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904510724,
+      "stop": 1612904526774
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904510722,
+  "stop": 1612904526798
+}

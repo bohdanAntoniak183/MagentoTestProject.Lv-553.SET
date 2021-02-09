@@ -4,10 +4,15 @@ using System.Collections.Generic;
 using System.Text;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Steps;
+using NUnit.Allure.Core;
+using Allure.Commons;
+using NUnit.Allure.Attributes;
+using System.ComponentModel;
 
 namespace MagentoLv553SET.Tests
 {
     [TestFixture]
+    [AllureNUnit]
     class AuthorizationTests : BaseTest
     {
         [Test]

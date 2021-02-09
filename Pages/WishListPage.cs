@@ -4,6 +4,7 @@ using System.Text;
 using MagentoLv553SET.Components;
 using MagentoLv553SET.Maps;
 using OpenQA.Selenium;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Pages
 {
@@ -14,145 +15,34 @@ namespace MagentoLv553SET.Pages
 
         }
 
-        public IWebElement ProductAddedMessage
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.MessageAboutAddingFusionBackPackToWishList));
-                return driver.FindElement(WishListPageMap.MessageAboutAddingFusionBackPackToWishList);
-            }
-        }
+        public IWebElement ProductAddedMessage => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.MessageAboutAddingFusionBackPackToWishList);
 
-        public IWebElement FusionBackPackInWishList
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.fusionBackpackProductInWishList));
-                return driver.FindElement(WishListPageMap.fusionBackpackProductInWishList);
-            }
-        }
+        public IWebElement FusionBackPackInWishList => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.fusionBackpackProductInWishList);
 
-        public IWebElement RemoveItemFusionBackPack
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.removeItemButton));
-                return driver.FindElement(WishListPageMap.removeItemButton);
-            }
-        }
+        public IWebElement RemoveItemFusionBackPack => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.removeItemButton);
 
-        public IWebElement MessageAboutRemoveingFusionBackPack
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.messageAboutRemoveingFusionBackPackFromWishList));
-                return driver.FindElement(WishListPageMap.messageAboutRemoveingFusionBackPackFromWishList);
-            }
-        }
+        public IWebElement MessageAboutRemoveingFusionBackPack => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.messageAboutRemoveingFusionBackPackFromWishList);
 
-        public IWebElement CountOfProductsFieldForFusionBackPack
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.countOfProductsFieldForFusionBackPack));
-                return driver.FindElement(WishListPageMap.countOfProductsFieldForFusionBackPack);
-            }
-        }
+        public IWebElement CountOfProductsFieldForFusionBackPack => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.countOfProductsFieldForFusionBackPack);
 
-        public IWebElement UpdateWishListButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.updateWishListButton));
-                return driver.FindElement(WishListPageMap.updateWishListButton);
-            }
-        }
+        public IWebElement UpdateWishListButton => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.updateWishListButton);
 
-        public IWebElement MessageAboutUpdatingFusionBackPackInWishList
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListPageMap.messageAboutUpdatingFusionBackPackInWishList));
-                return driver.FindElement(WishListPageMap.messageAboutUpdatingFusionBackPackInWishList);
-            }
-        }
+        public IWebElement MessageAboutUpdatingFusionBackPackInWishList => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.messageAboutUpdatingFusionBackPackInWishList);
 
-        public IWebElement ShareWishListButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.shareWishListButton));
-                return driver.FindElement(WishListPageMap.shareWishListButton);
-            }
-        }
+        public IWebElement ShareWishListButton => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.shareWishListButton);
 
-        public IWebElement MyWishListPageTitle
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.myWishListPageTitle));
-                return driver.FindElement(WishListPageMap.myWishListPageTitle);
-            }
-        }
+        public IWebElement MyWishListPageTitle => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.myWishListPageTitle);
 
-        public IWebElement AddToCartButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.addToCartButton));
-                return driver.FindElement(WishListPageMap.addToCartButton);
-            }
-        }
+        public IWebElement AddToCartButton => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.addToCartButton);
 
-        public IWebElement MessageAboutAddingFusionBackPackInShoppingCart
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.messageAboutAddingFusionBackPackInShoppingCart));
-                return driver.FindElement(WishListPageMap.messageAboutAddingFusionBackPackInShoppingCart);
-            }
-        }
+        public IWebElement MessageAboutAddingFusionBackPackInShoppingCart => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.messageAboutAddingFusionBackPackInShoppingCart);
 
-        public IWebElement AddAllToCartButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.addAllToCartButton));
-                return driver.FindElement(WishListPageMap.addAllToCartButton);
-            }
-        }
+        public IWebElement AddAllToCartButton => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.addAllToCartButton);
 
-        public IWebElement MessageAboutAddingAllProductsInShoppingCart
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.messageAboutAddingAllProductsInShoppingCart));
-                return driver.FindElement(WishListPageMap.messageAboutAddingAllProductsInShoppingCart);
-            }
-        }
+        public IWebElement MessageAboutAddingAllProductsInShoppingCart => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.messageAboutAddingAllProductsInShoppingCart);
 
-        public IWebElement MessageAboutSharingWishList
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(WishListPageMap.messageAboutSharingWishList));
-                return driver.FindElement(WishListPageMap.messageAboutSharingWishList);
-            }
-        }
+        public IWebElement MessageAboutSharingWishList => new PropertyGetters(driver).GetVisibleWebElement(WishListPageMap.messageAboutSharingWishList);
+
 
         public string GetProductAddedMessage()
         {

@@ -1,0 +1,59 @@
+{
+  "uuid": "1b974631-443b-4dff-8d2c-0ee368372223-tc-0-1012",
+  "name": "MagentoLv553SET.Tests.WishListTests.AddToCartWithSuchBigCountOfProductsTest",
+  "children": [
+    "a32ec4dd-feed-48b8-8e68-5965be4b81d5-tr-0-1021"
+  ],
+  "befores": [
+    {
+      "name": "DoBeforeAllTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904846208,
+      "stop": 1612904846208
+    },
+    {
+      "name": "DoBeforeEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904846210,
+      "stop": 1612904846210
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904846210,
+      "stop": 1612904846210
+    }
+  ],
+  "links": [],
+  "start": 1612904823729,
+  "stop": 1612904846473
+}

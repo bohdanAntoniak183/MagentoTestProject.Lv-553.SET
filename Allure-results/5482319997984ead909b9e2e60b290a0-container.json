@@ -1,0 +1,59 @@
+{
+  "uuid": "2c818dc7-45d2-41d1-811c-d1de0996b6a4-tc-0-1010",
+  "name": "MagentoLv553SET.Tests.AuthorizationTests.AuthorizationTest",
+  "children": [
+    "717c9dd3-2b44-4b21-b843-59a100d79cb6-tr-0-1011"
+  ],
+  "befores": [
+    {
+      "name": "DoBeforeAllTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904972555,
+      "stop": 1612904972555
+    },
+    {
+      "name": "DoBeforeEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904972556,
+      "stop": 1612904972556
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904972556,
+      "stop": 1612904972556
+    }
+  ],
+  "links": [],
+  "start": 1612904960988,
+  "stop": 1612904972728
+}

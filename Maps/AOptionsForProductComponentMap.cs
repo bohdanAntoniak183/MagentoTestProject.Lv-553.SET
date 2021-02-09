@@ -8,5 +8,7 @@ namespace MagentoLv553SET.Maps
     class AOptionsForProductComponentMap
     {
         public static readonly By addToWishListButton = By.XPath("//a[@class='action towishlist']");
+        
+        
     }
 }

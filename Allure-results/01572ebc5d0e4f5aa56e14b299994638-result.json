@@ -1,0 +1,67 @@
+{
+  "uuid": "03dc87b0-0c1b-4e8c-9484-cedd62f8f15f-tr-0-1019",
+  "historyId": "MagentoLv553SET.Tests.WishListTests.ShareWishListTest",
+  "fullName": "MagentoLv553SET.Tests.WishListTests.ShareWishListTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "ShareWishListTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    }
+  ],
+  "links": [],
+  "name": "ShareWishListTest",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : timeout: Timed out receiving message from renderer: 10.000\n  (Session info: chrome=88.0.4324.150)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at MagentoLv553SET.Pages.HomePage.ClickOnMainSignInButton() in D:\\C#_Projects\\MagentoSet\\Pages\\HomePage.cs:line 32\r\n   at MagentoLv553SET.Steps.HomePageBL.ClickOnMainSignInButton() in D:\\C#_Projects\\MagentoSet\\Steps\\HomePageBL.cs:line 22\r\n   at MagentoLv553SET.Tests.WishListTests.ShareWishListTest() in D:\\C#_Projects\\MagentoSet\\Tests\\WishListTests.cs:line 125"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "ShareWishListTest",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : timeout: Timed out receiving message from renderer: 10.000\n  (Session info: chrome=88.0.4324.150)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at MagentoLv553SET.Pages.HomePage.ClickOnMainSignInButton() in D:\\C#_Projects\\MagentoSet\\Pages\\HomePage.cs:line 32\r\n   at MagentoLv553SET.Steps.HomePageBL.ClickOnMainSignInButton() in D:\\C#_Projects\\MagentoSet\\Steps\\HomePageBL.cs:line 22\r\n   at MagentoLv553SET.Tests.WishListTests.ShareWishListTest() in D:\\C#_Projects\\MagentoSet\\Tests\\WishListTests.cs:line 125"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5da8560c45074b5e90758b47de223d16-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904398288,
+      "stop": 1612904420586
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904398285,
+  "stop": 1612904420608
+}

@@ -1,0 +1,63 @@
+{
+  "uuid": "853e8b6f-bfa9-435c-8cd9-f2d29af218d1-tr-0-1014",
+  "historyId": "MagentoLv553SET.Tests.WishListTests.RemoveFromWishListTest",
+  "fullName": "MagentoLv553SET.Tests.WishListTests.RemoveFromWishListTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "RemoveFromWishListTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    }
+  ],
+  "links": [],
+  "name": "RemoveFromWishListTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "RemoveFromWishListTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ef22aa63b0eb4b7b821407790b973a51-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904550863,
+      "stop": 1612904571548
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904550861,
+  "stop": 1612904571561
+}

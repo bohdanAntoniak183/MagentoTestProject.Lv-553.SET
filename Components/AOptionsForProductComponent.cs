@@ -4,6 +4,7 @@ using System.Text;
 using MagentoLv553SET.Pages;
 using OpenQA.Selenium;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Components
 {
@@ -12,22 +13,18 @@ namespace MagentoLv553SET.Components
         public AOptionsForProductComponent(IWebDriver webDriver) : base(webDriver)
         {
 
-        }    
-           
-        public IWebElement AddToWishListButton
-        {    
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(AOptionsForProductComponentMap.addToWishListButton));
-                return driver.FindElement(AOptionsForProductComponentMap.addToWishListButton);
-            }
-    
         }
 
+        public IWebElement AddToWishListButton => new PropertyGetters(driver).GetVisibleWebElement(AOptionsForProductComponentMap.addToWishListButton);
+
+       
+       
+      
         public void ClickOnAddToWishListButton()
         {
             AddToWishListButton.Click();
         }
+
+      
     }
 }

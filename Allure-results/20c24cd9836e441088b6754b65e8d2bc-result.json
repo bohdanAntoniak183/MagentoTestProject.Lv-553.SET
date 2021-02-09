@@ -1,0 +1,63 @@
+{
+  "uuid": "bee5221e-be03-449a-bc4c-25eb591da8e2-tr-0-1009",
+  "historyId": "MagentoLv553SET.Rest.RestPetstoreTest.GetPetWithId",
+  "fullName": "MagentoLv553SET.Rest.RestPetstoreTest.GetPetWithId",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Rest.RestPetstoreTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "GetPetWithId"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Rest.RestPetstoreTest"
+    }
+  ],
+  "links": [],
+  "name": "GetPetWithId",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "GetPetWithId",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3e02adb212a14847a5428720f96f1e8b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612902209413,
+      "stop": 1612902210066
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612902209413,
+  "stop": 1612902210066
+}

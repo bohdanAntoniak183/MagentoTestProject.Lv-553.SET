@@ -1,0 +1,59 @@
+{
+  "uuid": "ac5aa85e-d7e0-4cba-bfb7-2c8e0cdae310-tc-0-1012",
+  "name": "MagentoLv553SET.Tests.WishListTests.AddToWishListTest",
+  "children": [
+    "e1acb5b0-a1e8-4f89-9a0a-b5b4a5c168f5-tr-0-1013"
+  ],
+  "befores": [
+    {
+      "name": "DoBeforeAllTests",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904639488,
+      "stop": 1612904639488
+    },
+    {
+      "name": "DoBeforeEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904639491,
+      "stop": 1612904639491
+    }
+  ],
+  "afters": [
+    {
+      "name": "DoAfterEachTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1612904639491,
+      "stop": 1612904639491
+    }
+  ],
+  "links": [],
+  "start": 1612904625406,
+  "stop": 1612904639692
+}

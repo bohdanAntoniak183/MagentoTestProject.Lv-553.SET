@@ -54,6 +54,26 @@ namespace MagentoLv553SET.Steps
             return this;
         }
 
+        public WishListPageBL InputSuchBigCountForFusionBackPackProduct()
+        {
+            Actions action = new Actions(webDriver);
+            action.MoveToElement(wishListPage.FusionBackPackInWishList).Build().Perform();
+            wishListPage.ClickOnCountOfProductsFieldForFusionBackPack();
+            wishListPage.ClearCountOfProductsFieldForFusionBackPack();
+            wishListPage.SendKeysToCountOfProductsFieldForFusionBackPack((new Random().Next(10001, 10010)).ToString());
+            return this;
+        }
+
+        public WishListPageBL InputZeroCountForFusionBackPackProduct()
+        {
+            Actions action = new Actions(webDriver);
+            action.MoveToElement(wishListPage.FusionBackPackInWishList).Build().Perform();
+            wishListPage.ClickOnCountOfProductsFieldForFusionBackPack();
+            wishListPage.ClearCountOfProductsFieldForFusionBackPack();
+            wishListPage.SendKeysToCountOfProductsFieldForFusionBackPack("0");
+            return this;
+        }
+
         public string GetSuccessUpdatedMessage()
         {
             string productUpdatedMessage = wishListPage.GetMessageAboutUpdatingFusionBackPackInWishList();
@@ -66,6 +86,14 @@ namespace MagentoLv553SET.Steps
             action.MoveToElement(wishListPage.FusionBackPackInWishList).Build().Perform();
             wishListPage.ClickOnAddToCartButton();
             return new WishListPageBL(webDriver);
+        }
+
+        public FusionBackPackPageBL ClickOnAddToCartButtonForIncorrectCountFusionBackPack()
+        {
+            Actions action = new Actions(webDriver);
+            action.MoveToElement(wishListPage.FusionBackPackInWishList).Build().Perform();
+            wishListPage.ClickOnAddToCartButton();
+            return new FusionBackPackPageBL(webDriver);
         }
 
         public string GetSuccessAddedToShoppingCartMessage()

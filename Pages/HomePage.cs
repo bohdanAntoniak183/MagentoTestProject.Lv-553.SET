@@ -7,6 +7,7 @@ using System;
 using MagentoLv553SET.Components;
 using MagentoLv553SET.Pages;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Pages
 {
@@ -17,45 +18,14 @@ namespace MagentoLv553SET.Pages
 
         }
 
-        public IWebElement MainSignInButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(HomePageMap.mainSignInButton));
-                return driver.FindElement(HomePageMap.mainSignInButton);
-            }
-        }
+        public IWebElement MainSignInButton => new PropertyGetters(driver).GetVisibleWebElement(HomePageMap.mainSignInButton);
 
-        public IWebElement FusionBackPackProduct
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(HomePageMap.fusionBackpackProduct));
-                return driver.FindElement(HomePageMap.fusionBackpackProduct);
-            }
-        }
+        public IWebElement FusionBackPackProduct => new PropertyGetters(driver).GetVisibleWebElement(HomePageMap.fusionBackpackProduct);
 
-        public IWebElement AddToWishListButtonforFusionBackpackProduct
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(HomePageMap.addToWishListButtonforFusionBackpackProduct));
-                return driver.FindElement(HomePageMap.addToWishListButtonforFusionBackpackProduct);
-            }
-        }
+        public IWebElement AddToWishListButtonforFusionBackpackProduct => new PropertyGetters(driver).GetVisibleWebElement(HomePageMap.addToWishListButtonforFusionBackpackProduct);
 
-        public IWebElement AddToWishListButtonforPushItMessengerBagProduct
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(HomePageMap.addToWishListButtonforPushItMessengerBagProduct));
-                return driver.FindElement(HomePageMap.addToWishListButtonforPushItMessengerBagProduct);
-            }
-        }
+        public IWebElement AddToWishListButtonforPushItMessengerBagProduct => new PropertyGetters(driver).GetVisibleWebElement(HomePageMap.addToWishListButtonforPushItMessengerBagProduct);
+        
 
         public void ClickOnMainSignInButton() 
         {

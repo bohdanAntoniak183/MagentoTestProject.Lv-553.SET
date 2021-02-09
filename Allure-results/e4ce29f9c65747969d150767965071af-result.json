@@ -1,0 +1,63 @@
+{
+  "uuid": "717c9dd3-2b44-4b21-b843-59a100d79cb6-tr-0-1011",
+  "historyId": "MagentoLv553SET.Tests.AuthorizationTests.AuthorizationTest",
+  "fullName": "MagentoLv553SET.Tests.AuthorizationTests.AuthorizationTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.AuthorizationTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AuthorizationTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.AuthorizationTests"
+    }
+  ],
+  "links": [],
+  "name": "AuthorizationTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AuthorizationTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "962601051eaf49c18d6bf9ae1de49f21-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904960997,
+      "stop": 1612904972576
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904960995,
+  "stop": 1612904972606
+}

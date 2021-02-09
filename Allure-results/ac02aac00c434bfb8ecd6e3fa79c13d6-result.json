@@ -1,0 +1,63 @@
+{
+  "uuid": "fe1cac5f-0a9f-401a-8cff-dd5a418aaaf4-tr-0-1008",
+  "historyId": "MagentoLv553SET.Rest.RestPetstoreTest.UpdatePet",
+  "fullName": "MagentoLv553SET.Rest.RestPetstoreTest.UpdatePet",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Rest.RestPetstoreTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "UpdatePet"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Rest.RestPetstoreTest"
+    }
+  ],
+  "links": [],
+  "name": "UpdatePet",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "UpdatePet",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "aaef448dea59401d8fb017321c1fff63-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612908318966,
+      "stop": 1612908319565
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612908318965,
+  "stop": 1612908319565
+}

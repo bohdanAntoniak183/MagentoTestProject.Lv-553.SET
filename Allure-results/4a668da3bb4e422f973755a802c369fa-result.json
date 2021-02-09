@@ -1,0 +1,63 @@
+{
+  "uuid": "7132d929-4362-4a12-b79f-fe6207607996-tr-0-1004",
+  "historyId": "MagentoLv553SET.Rest.RestMagentoTests.GetPaymentMethodsForNewCartTest",
+  "fullName": "MagentoLv553SET.Rest.RestMagentoTests.GetPaymentMethodsForNewCartTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "GetPaymentMethodsForNewCartTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    }
+  ],
+  "links": [],
+  "name": "GetPaymentMethodsForNewCartTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "GetPaymentMethodsForNewCartTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "dc9ac784121f426b8bca34b6b4ea311c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612908314581,
+      "stop": 1612908317245
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612908314581,
+  "stop": 1612908317245
+}

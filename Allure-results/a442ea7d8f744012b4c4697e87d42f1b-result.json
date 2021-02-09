@@ -1,0 +1,63 @@
+{
+  "uuid": "7389a307-1441-417f-8f33-c216e4bf49d8-tr-0-1005",
+  "historyId": "MagentoLv553SET.Rest.RestMagentoTests.CreateTockenForAdminTest",
+  "fullName": "MagentoLv553SET.Rest.RestMagentoTests.CreateTockenForAdminTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateTockenForAdminTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    }
+  ],
+  "links": [],
+  "name": "CreateTockenForAdminTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateTockenForAdminTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c20a913332054cac9dbc25c3d297849c-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612908310961,
+      "stop": 1612908312281
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612908310961,
+  "stop": 1612908312283
+}

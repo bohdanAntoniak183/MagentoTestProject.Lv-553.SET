@@ -22,6 +22,12 @@ namespace MagentoLv553SET.Steps
             return new WishListPageBL(webDriver);
         }
 
+        public string GetMessageForSuchBigCount()
+        {
+            string messageForSuchBigCount = fusionBackPackPage.GetMessageForSuchBigCountOfProducts();
+            return messageForSuchBigCount;
+        }
+
        
 
     }

@@ -1,0 +1,12 @@
+{
+  "uuid": "27bf68b1-b459-41a9-acb5-a4f0a00e56c6-tc-0-1000",
+  "name": "MagentoLv553SET.Rest.RestMagentoTests.CreateTockenForAdminTest",
+  "children": [
+    "141bb5d0-4f84-457b-a336-f9c5de7d15f8-tr-0-1005"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1612902203664,
+  "stop": 1612902204757
+}

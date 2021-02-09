@@ -1,0 +1,63 @@
+{
+  "uuid": "a32ec4dd-feed-48b8-8e68-5965be4b81d5-tr-0-1021",
+  "historyId": "MagentoLv553SET.Tests.WishListTests.AddToCartWithSuchBigCountOfProductsTest",
+  "fullName": "MagentoLv553SET.Tests.WishListTests.AddToCartWithSuchBigCountOfProductsTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddToCartWithSuchBigCountOfProductsTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    }
+  ],
+  "links": [],
+  "name": "AddToCartWithSuchBigCountOfProductsTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddToCartWithSuchBigCountOfProductsTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "ce175e3613574a9395e8e6241ec94eb1-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904823741,
+      "stop": 1612904846229
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904823739,
+  "stop": 1612904846262
+}

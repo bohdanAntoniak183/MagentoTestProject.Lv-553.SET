@@ -1,0 +1,63 @@
+{
+  "uuid": "e3b943ea-aa59-4867-9829-92283a1ad324-tr-0-1003",
+  "historyId": "MagentoLv553SET.Rest.RestMagentoTests.CreateAnEmptyCartTest",
+  "fullName": "MagentoLv553SET.Rest.RestMagentoTests.CreateAnEmptyCartTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateAnEmptyCartTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    }
+  ],
+  "links": [],
+  "name": "CreateAnEmptyCartTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateAnEmptyCartTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e125e1d779ae476593d168bd8ea9c312-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612908308481,
+      "stop": 1612908310770
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612908308475,
+  "stop": 1612908310794
+}

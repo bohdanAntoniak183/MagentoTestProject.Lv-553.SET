@@ -1,0 +1,67 @@
+{
+  "uuid": "2b8cfab4-e49d-4398-aaed-698dc22c8b75-tr-0-1018",
+  "historyId": "MagentoLv553SET.Tests.WishListTests.AddAllProductsToShoppingCartTest",
+  "fullName": "MagentoLv553SET.Tests.WishListTests.AddAllProductsToShoppingCartTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AddAllProductsToShoppingCartTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.WishListTests"
+    }
+  ],
+  "links": [],
+  "name": "AddAllProductsToShoppingCartTest",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button type=\"button\" data-role=\"all-tocart\" title=\"Add All to Cart\" class=\"action tocart\">...</button> is not clickable at point (797, 694). Other element would receive the click: <textarea id=\"product-item-comment-5\" placeholder=\"Comment\" name=\"description[5]\" title=\"Comment\" class=\"product-item-comment\"></textarea>\n  (Session info: chrome=88.0.4324.150)",
+    "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at MagentoLv553SET.Pages.WishListPage.ClickOnAddAllToCartButton() in D:\\C#_Projects\\MagentoSet\\Pages\\WishListPage.cs:line 109\r\n   at MagentoLv553SET.Steps.WishListPageBL.ClickOnAddAllProductsToCartButton() in D:\\C#_Projects\\MagentoSet\\Steps\\WishListPageBL.cs:line 114\r\n   at MagentoLv553SET.Tests.WishListTests.AddAllProductsToShoppingCartTest() in D:\\C#_Projects\\MagentoSet\\Tests\\WishListTests.cs:line 106"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "AddAllProductsToShoppingCartTest",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button type=\"button\" data-role=\"all-tocart\" title=\"Add All to Cart\" class=\"action tocart\">...</button> is not clickable at point (797, 694). Other element would receive the click: <textarea id=\"product-item-comment-5\" placeholder=\"Comment\" name=\"description[5]\" title=\"Comment\" class=\"product-item-comment\"></textarea>\n  (Session info: chrome=88.0.4324.150)",
+        "trace": "   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.Remote.RemoteWebElement.Click()\r\n   at MagentoLv553SET.Pages.WishListPage.ClickOnAddAllToCartButton() in D:\\C#_Projects\\MagentoSet\\Pages\\WishListPage.cs:line 109\r\n   at MagentoLv553SET.Steps.WishListPageBL.ClickOnAddAllProductsToCartButton() in D:\\C#_Projects\\MagentoSet\\Steps\\WishListPageBL.cs:line 114\r\n   at MagentoLv553SET.Tests.WishListTests.AddAllProductsToShoppingCartTest() in D:\\C#_Projects\\MagentoSet\\Tests\\WishListTests.cs:line 106"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "c26ff58a3d744f37a4b8781f05c27a0f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612904861126,
+      "stop": 1612904883766
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612904861124,
+  "stop": 1612904883788
+}

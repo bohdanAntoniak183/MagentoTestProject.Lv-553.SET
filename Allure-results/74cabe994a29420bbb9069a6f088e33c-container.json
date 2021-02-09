@@ -1,0 +1,12 @@
+{
+  "uuid": "a0b95392-406c-4332-bb8f-f48739bd1dee-tc-0-1000",
+  "name": "MagentoLv553SET.Rest.RestMagentoTests.GetPaymentMethodsForNewCartTest",
+  "children": [
+    "8e7f5f58-deee-4c5f-a7b9-ac151ebc10d7-tr-0-1004"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1612902193177,
+  "stop": 1612902195427
+}

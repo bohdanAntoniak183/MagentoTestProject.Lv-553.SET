@@ -1,0 +1,63 @@
+{
+  "uuid": "4984be0e-62ea-4c0a-9004-733efc88d72e-tr-0-1002",
+  "historyId": "MagentoLv553SET.Rest.RestMagentoTests.DeletePaymentOrderInfoTest",
+  "fullName": "MagentoLv553SET.Rest.RestMagentoTests.DeletePaymentOrderInfoTest",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-4L1LOTP"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DeletePaymentOrderInfoTest"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Rest.RestMagentoTests"
+    }
+  ],
+  "links": [],
+  "name": "DeletePaymentOrderInfoTest",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "DeletePaymentOrderInfoTest",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e0eb76d1c3054d9288180379f96d121e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612902191199,
+      "stop": 1612902192198
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612902191199,
+  "stop": 1612902192199
+}

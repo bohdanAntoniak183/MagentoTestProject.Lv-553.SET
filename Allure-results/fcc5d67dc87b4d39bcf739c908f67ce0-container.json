@@ -1,0 +1,12 @@
+{
+  "uuid": "45ac00b8-b285-4b60-928e-aad41dbdb009-tc-0-1000",
+  "name": "MagentoLv553SET.Rest.RestMagentoTests.CreateAnEmptyCartTest",
+  "children": [
+    "e8914718-da2a-4dba-941f-41c2841ec1c6-tr-0-1003"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1612902188009,
+  "stop": 1612902189846
+}

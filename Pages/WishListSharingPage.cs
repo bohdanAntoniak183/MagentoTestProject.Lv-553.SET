@@ -4,6 +4,7 @@ using System.Text;
 using MagentoLv553SET.Components;
 using OpenQA.Selenium;
 using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Pages
 {
@@ -15,46 +16,14 @@ namespace MagentoLv553SET.Pages
 
         }
 
-        public IWebElement EmailsField
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListSharingPageMap.emailsField));
-                return driver.FindElement(WishListSharingPageMap.emailsField);
-            }
-        }
+        public IWebElement EmailsField => new PropertyGetters(driver).GetVisibleWebElement(WishListSharingPageMap.emailsField);
 
-        public IWebElement MessageField
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListSharingPageMap.messageField));
-                return driver.FindElement(WishListSharingPageMap.messageField);
-            }
-        }
+        public IWebElement MessageField => new PropertyGetters(driver).GetVisibleWebElement(WishListSharingPageMap.messageField);
 
+        public IWebElement ShareWishListButton => new PropertyGetters(driver).GetVisibleWebElement(WishListSharingPageMap.shareWishListButton);
 
-        public IWebElement ShareWishListButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListSharingPageMap.shareWishListButton));
-                return driver.FindElement(WishListSharingPageMap.shareWishListButton);
-            }
-        }
+        public IWebElement MessageAboutIncorrectEmail => new PropertyGetters(driver).GetVisibleWebElement(WishListSharingPageMap.messageAboutIncorrectEmail);
 
-        public IWebElement MessageAboutIncorrectEmail
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(WishListSharingPageMap.messageAboutIncorrectEmail));
-                return driver.FindElement(WishListSharingPageMap.messageAboutIncorrectEmail);
-            }
-        }
 
         public void SendKeysToEmailsField(string data)
         {
