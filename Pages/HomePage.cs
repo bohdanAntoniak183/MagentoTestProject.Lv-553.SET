@@ -14,13 +14,11 @@ namespace MagentoLv553SET.Pages
     class HomePage : AMenuPart
     {
         public HomePage(IWebDriver webDriver) : base(webDriver)
-        {
+        { 
         }
-
         public IWebElement MainSignInButton => new PropertyGetters(driver).GetVisibleWebElement(HomePageMap.mainSignInButton);
 
         public IWebElement CreateAnAccountButton => new PropertyGetters(driver).GetClickableWebElement(HomePageMap.createAnAccountButton);
 
-        
     }
 }

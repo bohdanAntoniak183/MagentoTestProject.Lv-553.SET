@@ -2,23 +2,34 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components;
+using MagentoLv553SET.Maps;
 using MagentoLv553SET.Util;
 using OpenQA.Selenium.Support.UI;
+
 
 namespace MagentoLv553SET.Pages
 {
     class ProductPage : AMenuPart
     {
+        public ReviewTabPage reviewTabPage;
         public ProductPage(IWebDriver webDriver) : base(webDriver)
         {
             reviewTabPage = new ReviewTabPage(webDriver);
         }
 
-        public ReviewTabPage reviewTabPage;
-       
+        public IWebElement MyAccountButton => new PropertyGetters(driver).
+            GetClickableWebElement(ProductPageMap.myAccountButton);
 
+        public IWebElement MainPageDropDown => new PropertyGetters(driver).
+            GetVisibleWebElement(ProductPageMap.mainPageDropDown);
+
+        public IWebElement AddedProductMessage => new PropertyGetters(driver).
+            GetVisibleWebElement(ProductPageMap.addedProductMessage);
+
+        public IWebElement AddToCompareButton => new PropertyGetters(driver).
+            GetVisibleWebElement(ProductPageMap.addToCompareButton);
+    
         public IWebElement AddToCartButton
         {
             get
@@ -120,7 +131,6 @@ namespace MagentoLv553SET.Pages
         {
             return SuccessfulAddReviewMessage.Text;
         }
-
         public void ClickOnAddToCartButton()
         {
             AddToCartButton.Click();

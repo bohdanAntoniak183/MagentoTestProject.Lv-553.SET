@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Text;
 using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components;
+using MagentoLv553SET.Util;
+using MagentoLv553SET.Data;
 
 namespace MagentoLv553SET.Pages
 {
@@ -13,35 +15,14 @@ namespace MagentoLv553SET.Pages
         {
 
         }
+        public IWebElement EmailField => new PropertyGetters(driver).
+            GetVisibleWebElement(AuthorizationPageMap.emailField);
 
-        public IWebElement EmailField
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementToBeClickable(AuthorizationPageMap.emailField));
-                return driver.FindElement(AuthorizationPageMap.emailField);
-            }
-        }
-        public IWebElement PasswordField
-        {
 
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(AuthorizationPageMap.passwordField));
-                return driver.FindElement(AuthorizationPageMap.passwordField);
-            }
-        }
-        public IWebElement SignInButton
-        {
-            get
-            {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(AuthorizationPageMap.signInButton));
-                return driver.FindElement(AuthorizationPageMap.signInButton);
-            }
-        }
+        public IWebElement PasswordField => new PropertyGetters(driver).
+            GetVisibleWebElement(AuthorizationPageMap.passwordField);
 
+        public IWebElement SignInButton => new PropertyGetters(driver).
+            GetVisibleWebElement(AuthorizationPageMap.signInButton);
     }
 }

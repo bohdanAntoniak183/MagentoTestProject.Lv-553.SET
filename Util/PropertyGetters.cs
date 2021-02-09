@@ -1,8 +1,10 @@
 
-﻿using OpenQA.Selenium;
+using OpenQA.Selenium;
+using System;
 using MagentoLv553SET.Pages;
 using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
+using System.Text;
 
 namespace MagentoLv553SET.Util
 {
@@ -25,7 +27,6 @@ namespace MagentoLv553SET.Util
                 ExpectedConditions.ElementToBeClickable(locator));
             return driver.FindElement(locator);
         }
-
         public IList<IWebElement> GetWebElements(By locator)
         {
             wait.Until(SeleniumExtras.WaitHelpers.

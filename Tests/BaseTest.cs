@@ -23,6 +23,7 @@ namespace MagentoLv553SET.Tests
         protected void DoBeforeAllTests()
         {
             ChromeOptions option = new ChromeOptions();
+            //option.AddArgument("headless");
             option.AddArgument("--no-proxy-server");
             option.AddArgument("-start-maximized");
             webDriver = new ChromeDriver(option);

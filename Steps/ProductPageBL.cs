@@ -9,18 +9,43 @@ using MagentoLv553SET.Util;
 
 namespace MagentoLv553SET.Steps
 {
-    class ProductPageBL : HomePage
+    class ProductPageBL : HomePageBL
     {
         private readonly ProductPage productPage;
         public ProductPageBL(IWebDriver webDriver) : base(webDriver)
         {
             productPage = new ProductPage(webDriver);
         }
+        public ProductPageBL ClickOnAddToCompareButton()
+        {
+            productPage.AddToCompareButton.Click();
+            return this;
+        }
 
+        public MyAccountPageBL GoToMyAccountPage()
+        {
+            ClickOnAccountDropDown();
+            ClickOnMyAccountButton();
+
+            return new MyAccountPageBL(webDriver);
+        }
+
+        public string GetSuccessfulAddedProductMessage()
+        {
+            string successfulMessage = productPage.AddedProductMessage.Text;
+            return successfulMessage;
+        }
+        public void ClickOnAccountDropDown()
+        {
+            productPage.MainPageDropDown.Click();
+        }
+        public void ClickOnMyAccountButton()
+        {
+            productPage.MyAccountButton.Click();
+        }
 
         public ProductPageBL EnterReview()
         {
-            
             ClickOnAddReviewButton();
             ClickOnRating();
             InputNicknameField();
@@ -28,11 +53,10 @@ namespace MagentoLv553SET.Steps
             InputReviewField();
             ClickOnSubmitReviewButton();
 
-            return new ProductPageBL(driver);
+            return new ProductPageBL(webDriver);
         }
         public ProductPageBL DigitalsInAllFielsReview()
         {
-
             ClickOnAddReviewButton();
             ClickOnRating();
             InputNicknameField();
@@ -40,7 +64,7 @@ namespace MagentoLv553SET.Steps
             InputReviewField();
             ClickOnSubmitReviewButton();
 
-            return new ProductPageBL(driver);
+            return new ProductPageBL(webDriver);
         }
 
         public ProductPageBL EnterReviewWithoutRating()
@@ -51,7 +75,7 @@ namespace MagentoLv553SET.Steps
             InputReviewField();
             ClickOnSubmitReviewButton();
 
-            return new ProductPageBL(driver);
+            return new ProductPageBL(webDriver);
         }
         public ProductPageBL EnterReviewWithoutSummary()
         {
@@ -61,7 +85,7 @@ namespace MagentoLv553SET.Steps
             InputReviewField();
             ClickOnSubmitReviewButton();
 
-            return new ProductPageBL(driver);
+            return new ProductPageBL(webDriver);
         }
         public ProductPageBL EnterReviewWithoutLogin()
         {
@@ -72,7 +96,7 @@ namespace MagentoLv553SET.Steps
             InputReviewField();
             ClickOnSubmitReviewButton();
 
-            return new ProductPageBL(driver);
+            return new ProductPageBL(webDriver);
         }
         public void ClickOnAddReviewButton()
         {
@@ -86,7 +110,7 @@ namespace MagentoLv553SET.Steps
         public void ClickOnRating()
         {
             String javascript = "arguments[0].click()";
-            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)driver;
+            IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)webDriver;
             jsExecutor.ExecuteScript(javascript, productPage.reviewTabPage.RatingReview);
         }
         public void InputNicknameField()
