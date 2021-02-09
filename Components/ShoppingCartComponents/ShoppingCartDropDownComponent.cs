@@ -2,6 +2,7 @@
 using MagentoLv553SET.Util;
 using MagentoLv553SET.Maps;
 using System;
+using System.Globalization;
 
 namespace MagentoLv553SET.Components.ShoppingCartComponents
 {
@@ -100,6 +101,25 @@ namespace MagentoLv553SET.Components.ShoppingCartComponents
         public int GetNumberOfItemsCounter()
         {
             return Convert.ToInt32(GetItemsCountTitleText());
+        }
+
+        public double GetTotalPriceNumber()
+        {
+            string totalPriceTitle = GetTotalPriceTitleText();
+            string changedPriceTitle = "";
+
+            foreach (char character in totalPriceTitle)
+            {
+                if (Char.IsDigit(character) || Char.IsPunctuation(character))
+                {
+                    changedPriceTitle += character;
+                }
+            }
+
+            NumberFormatInfo format = new NumberFormatInfo();
+            format.NumberDecimalSeparator = ".";
+
+            return Convert.ToDouble(changedPriceTitle, format);
         }
     }
 }

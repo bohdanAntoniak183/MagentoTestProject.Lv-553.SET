@@ -48,5 +48,18 @@ namespace MagentoLv553SET.Tests.ShoppingCartDropDown
 
             Assert.AreEqual(expectedCounter, actualCounter);
         }
+
+        [Test]
+        public void TotalPriceTest()
+        {
+            HomePageBL homePageBL = new HomePageBL(webDriver);
+
+            double actualTotalPrice = homePageBL
+                .SearchingAndAddingToCartProducts(TestsData.productsNames)
+                .OpenNotEmptyShoppingCartDropDown()
+                .GetTotalPriceNumber();
+
+            Assert.AreEqual(TestsData.totalPriceOfProducts, actualTotalPrice);
+        }
     }
 }
