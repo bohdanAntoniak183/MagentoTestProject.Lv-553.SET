@@ -18,7 +18,7 @@ namespace MagentoLv553SET.Tests.RestAPITests
             var client = new RestClient(PetStoreRestAPIData.petStoreAPIUrl);
             var request = new RestRequest(PetStoreRestAPIData.createNewPetRequest, Method.POST);
             request.AddParameter("application/json",
-                PetStoreRestAPIData.PetInformation(PetStoreRestAPIData.pathToNewPetFile),
+                PetStoreRestAPIData.ReadInfoFromTheFile(PetStoreRestAPIData.pathToNewPetFile),
                 ParameterType.RequestBody);
 
             IRestResponse response = client.Execute(request);
@@ -37,7 +37,7 @@ namespace MagentoLv553SET.Tests.RestAPITests
             var request = new RestRequest(PetStoreRestAPIData.createNewPetRequest, Method.PUT);
 
             request.AddParameter("application/json", 
-                PetStoreRestAPIData.PetInformation(PetStoreRestAPIData.pathToUpdatePetFile),
+                PetStoreRestAPIData.ReadInfoFromTheFile(PetStoreRestAPIData.pathToUpdatePetFile),
                 ParameterType.RequestBody);
 
             IRestResponse response = client.Execute(request);
