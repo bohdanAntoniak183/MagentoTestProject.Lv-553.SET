@@ -1,0 +1,12 @@
+{
+  "uuid": "defd9338-96fe-4190-b85a-4d1d71055090-tc-0-1008",
+  "name": "MagentoLv553SET.Tests.CreateCustomerAPITests.CreateCustomer_Test",
+  "children": [
+    "d3b22c4c-65f6-4345-b0e4-5c5c04b6b280-tr-0-1009"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1612897559116,
+  "stop": 1612897560668
+}

@@ -1,0 +1,67 @@
+{
+  "uuid": "3daa4214-9762-4c37-9b64-af33fdf9686f-tr-0-1009",
+  "historyId": "MagentoLv553SET.Tests.CreateCustomerAPITests.CreateCustomer_Test",
+  "fullName": "MagentoLv553SET.Tests.CreateCustomerAPITests.CreateCustomer_Test",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "MAX2211"
+    },
+    {
+      "name": "testClass",
+      "value": "MagentoLv553SET.Tests.CreateCustomerAPITests"
+    },
+    {
+      "name": "testMethod",
+      "value": "CreateCustomer_Test"
+    },
+    {
+      "name": "package",
+      "value": "MagentoLv553SET.Tests.CreateCustomerAPITests"
+    }
+  ],
+  "links": [],
+  "name": "CreateCustomer_Test",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected: OK\r\n  But was:  0\r\n",
+    "trace": "   at MagentoLv553SET.Tests.CreateCustomerAPITests.CreateCustomer_Test() in D:\\SET\\DEMO1\\MAGENTO\\MagentoTestProject.Lv-553.SET\\Tests\\RestAPITests\\CreateCustomerAPITests.cs:line 48\r\n"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "CreateCustomer_Test",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected: OK\r\n  But was:  0\r\n",
+        "trace": "   at MagentoLv553SET.Tests.CreateCustomerAPITests.CreateCustomer_Test() in D:\\SET\\DEMO1\\MAGENTO\\MagentoTestProject.Lv-553.SET\\Tests\\RestAPITests\\CreateCustomerAPITests.cs:line 48\r\n"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "75c4d0813a0644ef8973d685ddb14666-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1612897394040,
+      "stop": 1612897406774
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1612897394036,
+  "stop": 1612897406806
+}
