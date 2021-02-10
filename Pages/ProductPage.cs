@@ -2,28 +2,56 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using MagentoLv553SET.Maps;
 using MagentoLv553SET.Components;
+using MagentoLv553SET.Maps;
+using MagentoLv553SET.Util;
+using OpenQA.Selenium.Support.UI;
+
 
 namespace MagentoLv553SET.Pages
 {
     class ProductPage : AMenuPart
     {
+        public ReviewTabPage reviewTabPage;
         public ProductPage(IWebDriver webDriver) : base(webDriver)
         {
             reviewTabPage = new ReviewTabPage(webDriver);
         }
 
-        public ReviewTabPage reviewTabPage;
-       
+        public IWebElement MyAccountButton => new PropertyGetters(driver).
+            GetClickableWebElement(ProductPageMap.myAccountButton);
 
+        public IWebElement MainPageDropDown => new PropertyGetters(driver).
+            GetVisibleWebElement(ProductPageMap.mainPageDropDown);
+
+        public IWebElement AddedProductMessage => new PropertyGetters(driver).
+            GetVisibleWebElement(ProductPageMap.addedProductMessage);
+
+        public IWebElement AddToCompareButton => new PropertyGetters(driver).
+            GetVisibleWebElement(ProductPageMap.addToCompareButton);
+    
         public IWebElement AddToCartButton
         {
             get
             {
-                wait.Until(SeleniumExtras.WaitHelpers.
-                    ExpectedConditions.ElementIsVisible(ProductPageMap.addToCartButton));
-                return driver.FindElement(ProductPageMap.addToCartButton);
+                return new PropertyGetters(driver).GetClickableWebElement(ProductPageMap.addToCartButton);
+            }
+        }
+
+        public IList<IWebElement> SizeList
+        {
+            get
+            {
+
+                return new PropertyGetters(driver).GetWebElements(ProductPageMap.sizeMap);
+            }
+        }
+
+        public IList<IWebElement> ColorList
+        {
+            get
+            {
+                return new PropertyGetters(driver).GetWebElements(ProductPageMap.colorMap);
             }
         }
 
@@ -90,10 +118,22 @@ namespace MagentoLv553SET.Pages
                 return driver.FindElement(ProductPageMap.successfulAddReviewMessage);
             }
         }
+
+        public IWebElement SuccessfulAddedProductMessage
+        {
+            get
+            {
+                return new PropertyGetters(driver).GetVisibleWebElement(ProductPageMap.successfulAddedProductLabel);
+            }
+        }
+
         public string SuccessfulAddReviewMessageText()
         {
             return SuccessfulAddReviewMessage.Text;
         }
-
+        public void ClickOnAddToCartButton()
+        {
+            AddToCartButton.Click();
+        }
     }
 }

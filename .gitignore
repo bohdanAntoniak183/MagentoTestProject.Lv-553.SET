@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+*.json
+*.txt
+.t
 # User-specific files
 *.rsuser
 *.suo
@@ -87,6 +91,8 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+*.json
+*.txt
 
 # Chutzpah Test files
 _Chutzpah*
@@ -199,6 +205,8 @@ csx/
 # Microsoft Azure Emulator
 ecf/
 rcf/
+/Allure-Reports
+/Allure-Results
 
 # Windows Store app package directories and files
 AppPackages/

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MagentoLv553SET.Pages;
 using OpenQA.Selenium;
+using MagentoLv553SET.Containers;
 
 namespace MagentoLv553SET.Steps
 {
@@ -42,6 +43,20 @@ namespace MagentoLv553SET.Steps
         //    return productNames;
         //}
 
+        public HomePageBL AddingProductToTheShoppingCart(string productName)
+        {
+            foreach (ProductContainer product in searchPage.getProductsContainers())
+            {
+                if (product.GetName().ToLower() == productName.ToLower())
+                {
+                    product.OpenProductPage()
+                        .AddProductToTheShoppingCart();
+                    break;
+                }
+            }
 
+            searchPage.ClickOnLogo();
+            return new HomePageBL(webDriver);
+        }
     }
 }
